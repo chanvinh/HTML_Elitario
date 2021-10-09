@@ -251,11 +251,13 @@ function checkLengthInput3() {
 }
 
 var button = document.getElementById("buttonJS");
-button.addEventListener("click",buttonCheck())
+button.addEventListener("click",buttonCheck);
 function buttonCheck() {
     var review = document.getElementById("reviewsJS").value;
     var name = document.getElementById("nameJS").value;
     var email = document.getElementById("emailJS").value;
+
+    button.disabled = false;
 
     review = review.trim()
     name = name.trim()
@@ -267,9 +269,8 @@ function buttonCheck() {
     else {
         button.disabled = false;
     }
-    
 }
-buttonCheck()
+
 
 //MAIN MAIN-4
 function owlCarousel1() {
