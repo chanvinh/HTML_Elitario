@@ -251,7 +251,7 @@ function checkLengthInput3() {
 }
 
 var button = document.getElementById("buttonJS");
-button.addEventListener("",buttonCheck())
+button.addEventListener("click",buttonCheck())
 function buttonCheck() {
     var review = document.getElementById("reviewsJS").value;
     var name = document.getElementById("nameJS").value;
@@ -262,10 +262,10 @@ function buttonCheck() {
     email = email.trim()
 
     if(review.length <= 1 || name.length <= 1 || email.length <=4) {
-        document.getElementById("buttonJS").disabled = true;
+        button.disabled = true;
     }
     else {
-        document.getElementById("buttonJS").disabled = false;
+        button.disabled = false;
     }
     
 }
