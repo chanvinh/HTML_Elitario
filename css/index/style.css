@@ -1,0 +1,1264 @@
+@import url("https://fonts.googleapis.com/css2?family=Assistant&display=swap");
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1;
+  font-family: 'Assistant', sans-serif; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+header .header {
+  background-color: #0d0d0d;
+  padding: 10px 0px; }
+  header .header .col-md-6 .OpenTime a, header .header .col-md-6 .OpenTime p {
+    color: #6a6a6a;
+    display: inline-block; }
+  header .header .col-md-6 .OpenTime a {
+    margin-right: 10px;
+    outline: none;
+    transition: all ease-in-out 0.2s;
+    text-decoration: none; }
+    header .header .col-md-6 .OpenTime a i {
+      margin-right: 5px; }
+    header .header .col-md-6 .OpenTime a:hover {
+      color: #bf9b5d; }
+  header .header .col-md-6 .User {
+    display: flex;
+    justify-content: end; }
+    header .header .col-md-6 .User ul li {
+      float: left;
+      margin-right: 20px; }
+      header .header .col-md-6 .User ul li:last-child {
+        margin-right: 0px !important; }
+      header .header .col-md-6 .User ul li a {
+        color: #6a6a6a;
+        outline: none;
+        text-decoration: none;
+        transition: all ease-in-out 0.2s; }
+        header .header .col-md-6 .User ul li a i {
+          margin-right: 5px; }
+        header .header .col-md-6 .User ul li a:hover {
+          color: #fff; }
+
+nav .nav {
+  background-image: url(../../images/Untitled-3.png);
+  background-size: cover;
+  background-position: 50%;
+  height: 30vh;
+  position: relative;
+  z-index: 4;
+  padding: 2rem 0px; }
+  nav .nav .row {
+    align-items: center; }
+    nav .nav .row .col-md-2 {
+      position: relative; }
+      nav .nav .row .col-md-2 .icon-bars i {
+        color: #6a6a6a;
+        font-size: 20px;
+        cursor: pointer; }
+        nav .nav .row .col-md-2 .icon-bars i:hover {
+          color: #bf9b5d; }
+      nav .nav .row .col-md-2 .icon-search-cart {
+        display: flex;
+        width: 100%; }
+        nav .nav .row .col-md-2 .icon-search-cart .icon-serach, nav .nav .row .col-md-2 .icon-search-cart .icon-cart {
+          margin-right: 20px; }
+          nav .nav .row .col-md-2 .icon-search-cart .icon-serach i, nav .nav .row .col-md-2 .icon-search-cart .icon-cart i {
+            cursor: pointer;
+            font-size: 20px;
+            color: #6a6a6a; }
+            nav .nav .row .col-md-2 .icon-search-cart .icon-serach i:hover, nav .nav .row .col-md-2 .icon-search-cart .icon-cart i:hover {
+              color: #bf9b5d; }
+        nav .nav .row .col-md-2 .icon-search-cart .icon-cart {
+          margin-right: 0px !important; }
+          nav .nav .row .col-md-2 .icon-search-cart .icon-cart a {
+            outline: none;
+            text-decoration: none; }
+            nav .nav .row .col-md-2 .icon-search-cart .icon-cart a span {
+              font-size: 13px;
+              margin-left: 5px;
+              background-color: #36373e;
+              color: #fff;
+              border-radius: 50%;
+              padding: 5px 10px; }
+          nav .nav .row .col-md-2 .icon-search-cart .icon-cart:hover .icon-cart i, nav .nav .row .col-md-2 .icon-search-cart .icon-cart:hover .icon-serach i {
+            color: #bf9b5d; }
+          nav .nav .row .col-md-2 .icon-search-cart .icon-cart:hover .Cart-Shop {
+            visibility: visible !important;
+            opacity: 1 !important;
+            transform: translateY(0px) !important; }
+          nav .nav .row .col-md-2 .icon-search-cart .icon-cart .Cart-Shop {
+            position: absolute;
+            background-color: black;
+            padding: 2rem 20px;
+            width: 300px;
+            top: 28px;
+            right: 0px;
+            z-index: 999;
+            transform: translateY(20px);
+            visibility: hidden;
+            opacity: 0;
+            transition: all linear 200ms; }
+            nav .nav .row .col-md-2 .icon-search-cart .icon-cart .Cart-Shop .top {
+              margin-bottom: 20px; }
+              nav .nav .row .col-md-2 .icon-search-cart .icon-cart .Cart-Shop .top p {
+                font-size: 25px;
+                color: #6a6a6a;
+                font-weight: bolder; }
+            nav .nav .row .col-md-2 .icon-search-cart .icon-cart .Cart-Shop .no-products {
+              display: none; }
+              nav .nav .row .col-md-2 .icon-search-cart .icon-cart .Cart-Shop .no-products p {
+                color: #6a6a6a; }
+            nav .nav .row .col-md-2 .icon-search-cart .icon-cart .Cart-Shop .yes-products .item-product {
+              margin-bottom: 15px; }
+              nav .nav .row .col-md-2 .icon-search-cart .icon-cart .Cart-Shop .yes-products .item-product .delete-item {
+                margin-bottom: 10px;
+                text-align: right; }
+                nav .nav .row .col-md-2 .icon-search-cart .icon-cart .Cart-Shop .yes-products .item-product .delete-item a {
+                  outline: none;
+                  text-decoration: none;
+                  display: inline-block; }
+                  nav .nav .row .col-md-2 .icon-search-cart .icon-cart .Cart-Shop .yes-products .item-product .delete-item a i {
+                    color: #6a6a6a; }
+                  nav .nav .row .col-md-2 .icon-search-cart .icon-cart .Cart-Shop .yes-products .item-product .delete-item a:hover i {
+                    color: #bf9b5d; }
+              nav .nav .row .col-md-2 .icon-search-cart .icon-cart .Cart-Shop .yes-products .item-product a {
+                outline: none;
+                display: block;
+                text-decoration: none; }
+                nav .nav .row .col-md-2 .icon-search-cart .icon-cart .Cart-Shop .yes-products .item-product a .item {
+                  display: flex; }
+                  nav .nav .row .col-md-2 .icon-search-cart .icon-cart .Cart-Shop .yes-products .item-product a .item .img-item {
+                    width: 30%;
+                    margin-right: 10px; }
+                    nav .nav .row .col-md-2 .icon-search-cart .icon-cart .Cart-Shop .yes-products .item-product a .item .img-item img {
+                      width: 100%; }
+                  nav .nav .row .col-md-2 .icon-search-cart .icon-cart .Cart-Shop .yes-products .item-product a .item .name-item {
+                    width: 70%; }
+                    nav .nav .row .col-md-2 .icon-search-cart .icon-cart .Cart-Shop .yes-products .item-product a .item .name-item .name {
+                      margin-bottom: 5px;
+                      color: #6a6a6a;
+                      font-size: 17px; }
+                    nav .nav .row .col-md-2 .icon-search-cart .icon-cart .Cart-Shop .yes-products .item-product a .item .name-item .price {
+                      display: inline-block;
+                      color: #bf9b5d;
+                      font-weight: bolder; }
+                    nav .nav .row .col-md-2 .icon-search-cart .icon-cart .Cart-Shop .yes-products .item-product a .item .name-item .number {
+                      display: inline-block;
+                      color: #6a6a6a; }
+                nav .nav .row .col-md-2 .icon-search-cart .icon-cart .Cart-Shop .yes-products .item-product a:hover .name-item .name {
+                  color: #bf9b5d; }
+            nav .nav .row .col-md-2 .icon-search-cart .icon-cart .Cart-Shop .yes-products .total-product {
+              display: flex;
+              margin-bottom: 15px; }
+              nav .nav .row .col-md-2 .icon-search-cart .icon-cart .Cart-Shop .yes-products .total-product .text-total, nav .nav .row .col-md-2 .icon-search-cart .icon-cart .Cart-Shop .yes-products .total-product .price-total {
+                width: 50%; }
+                nav .nav .row .col-md-2 .icon-search-cart .icon-cart .Cart-Shop .yes-products .total-product .text-total p, nav .nav .row .col-md-2 .icon-search-cart .icon-cart .Cart-Shop .yes-products .total-product .price-total p {
+                  font-size: 20px;
+                  color: #fff; }
+              nav .nav .row .col-md-2 .icon-search-cart .icon-cart .Cart-Shop .yes-products .total-product .price-total {
+                width: 50%;
+                text-align: center; }
+                nav .nav .row .col-md-2 .icon-search-cart .icon-cart .Cart-Shop .yes-products .total-product .price-total p {
+                  color: #bf9b5d;
+                  font-weight: bolder; }
+            nav .nav .row .col-md-2 .icon-search-cart .icon-cart .Cart-Shop .yes-products .check-product {
+              text-align: center; }
+              nav .nav .row .col-md-2 .icon-search-cart .icon-cart .Cart-Shop .yes-products .check-product .checkoutCart, nav .nav .row .col-md-2 .icon-search-cart .icon-cart .Cart-Shop .yes-products .check-product .viewCart {
+                border: 1px solid #bf9b5d;
+                margin-bottom: 10px;
+                transition: border ease-in-out 0.3s; }
+                nav .nav .row .col-md-2 .icon-search-cart .icon-cart .Cart-Shop .yes-products .check-product .checkoutCart a, nav .nav .row .col-md-2 .icon-search-cart .icon-cart .Cart-Shop .yes-products .check-product .viewCart a {
+                  padding: 15px;
+                  display: block;
+                  color: #bf9b5d;
+                  outline: none;
+                  font-weight: bolder;
+                  text-decoration: none; }
+                  nav .nav .row .col-md-2 .icon-search-cart .icon-cart .Cart-Shop .yes-products .check-product .checkoutCart a i, nav .nav .row .col-md-2 .icon-search-cart .icon-cart .Cart-Shop .yes-products .check-product .viewCart a i {
+                    color: #bf9b5d;
+                    margin-right: 10px; }
+                nav .nav .row .col-md-2 .icon-search-cart .icon-cart .Cart-Shop .yes-products .check-product .checkoutCart:hover, nav .nav .row .col-md-2 .icon-search-cart .icon-cart .Cart-Shop .yes-products .check-product .viewCart:hover {
+                  border: 1px solid black;
+                  background-color: #282828; }
+              nav .nav .row .col-md-2 .icon-search-cart .icon-cart .Cart-Shop .yes-products .check-product .viewCart {
+                margin-bottom: 0px !important; }
+    nav .nav .row .col-md-8 .logo {
+      text-align: center; }
+
+.mobile {
+  display: none; }
+  .mobile .nav-mobile {
+    background-image: url(../../images/Untitled-3.png);
+    background-size: cover;
+    background-position: 50%;
+    height: 34vh;
+    position: relative;
+    z-index: 4;
+    padding: 2rem 0px; }
+    .mobile .nav-mobile .col-md-12 .img-logo {
+      text-align: center; }
+    .mobile .nav-mobile .item-mobile {
+      display: flex;
+      width: 100%;
+      margin-top: 20px; }
+      .mobile .nav-mobile .item-mobile .icon-bars {
+        width: 50%; }
+        .mobile .nav-mobile .item-mobile .icon-bars i {
+          color: #6a6a6a;
+          font-size: 20px;
+          cursor: pointer; }
+          .mobile .nav-mobile .item-mobile .icon-bars i:hover {
+            color: #bf9b5d; }
+      .mobile .nav-mobile .item-mobile .icon-search-cart {
+        display: flex;
+        width: 50%;
+        position: relative;
+        justify-content: right; }
+        .mobile .nav-mobile .item-mobile .icon-search-cart .icon-serach, .mobile .nav-mobile .item-mobile .icon-search-cart .icon-cart {
+          margin-right: 20px; }
+          .mobile .nav-mobile .item-mobile .icon-search-cart .icon-serach i, .mobile .nav-mobile .item-mobile .icon-search-cart .icon-cart i {
+            cursor: pointer;
+            font-size: 20px;
+            color: #6a6a6a; }
+            .mobile .nav-mobile .item-mobile .icon-search-cart .icon-serach i:hover, .mobile .nav-mobile .item-mobile .icon-search-cart .icon-cart i:hover {
+              color: #bf9b5d; }
+        .mobile .nav-mobile .item-mobile .icon-search-cart .icon-cart {
+          margin-right: 0px !important; }
+          .mobile .nav-mobile .item-mobile .icon-search-cart .icon-cart a {
+            outline: none;
+            text-decoration: none; }
+            .mobile .nav-mobile .item-mobile .icon-search-cart .icon-cart a span {
+              font-size: 13px;
+              margin-left: 5px;
+              background-color: #36373e;
+              color: #fff;
+              border-radius: 50%;
+              padding: 5px 10px; }
+          .mobile .nav-mobile .item-mobile .icon-search-cart .icon-cart:hover .icon-cart i, .mobile .nav-mobile .item-mobile .icon-search-cart .icon-cart:hover .icon-serach i {
+            color: #bf9b5d; }
+          .mobile .nav-mobile .item-mobile .icon-search-cart .icon-cart:hover .Cart-Shop {
+            visibility: visible !important;
+            opacity: 1 !important;
+            transform: translateY(0px) !important; }
+          .mobile .nav-mobile .item-mobile .icon-search-cart .icon-cart .Cart-Shop {
+            position: absolute;
+            background-color: black;
+            padding: 2rem 20px;
+            width: 300px;
+            top: 28px;
+            right: 0px;
+            z-index: 999;
+            transform: translateY(20px);
+            visibility: hidden;
+            opacity: 0;
+            transition: all linear 200ms; }
+            .mobile .nav-mobile .item-mobile .icon-search-cart .icon-cart .Cart-Shop .top {
+              margin-bottom: 20px; }
+              .mobile .nav-mobile .item-mobile .icon-search-cart .icon-cart .Cart-Shop .top p {
+                font-size: 25px;
+                color: #6a6a6a;
+                font-weight: bolder; }
+            .mobile .nav-mobile .item-mobile .icon-search-cart .icon-cart .Cart-Shop .no-products {
+              display: none; }
+              .mobile .nav-mobile .item-mobile .icon-search-cart .icon-cart .Cart-Shop .no-products p {
+                color: #6a6a6a; }
+            .mobile .nav-mobile .item-mobile .icon-search-cart .icon-cart .Cart-Shop .yes-products .item-product {
+              margin-bottom: 15px; }
+              .mobile .nav-mobile .item-mobile .icon-search-cart .icon-cart .Cart-Shop .yes-products .item-product .delete-item {
+                margin-bottom: 10px;
+                text-align: right; }
+                .mobile .nav-mobile .item-mobile .icon-search-cart .icon-cart .Cart-Shop .yes-products .item-product .delete-item a {
+                  outline: none;
+                  text-decoration: none;
+                  display: inline-block; }
+                  .mobile .nav-mobile .item-mobile .icon-search-cart .icon-cart .Cart-Shop .yes-products .item-product .delete-item a i {
+                    color: #6a6a6a; }
+                  .mobile .nav-mobile .item-mobile .icon-search-cart .icon-cart .Cart-Shop .yes-products .item-product .delete-item a:hover i {
+                    color: #bf9b5d; }
+              .mobile .nav-mobile .item-mobile .icon-search-cart .icon-cart .Cart-Shop .yes-products .item-product a {
+                outline: none;
+                display: block;
+                text-decoration: none; }
+                .mobile .nav-mobile .item-mobile .icon-search-cart .icon-cart .Cart-Shop .yes-products .item-product a .item {
+                  display: flex; }
+                  .mobile .nav-mobile .item-mobile .icon-search-cart .icon-cart .Cart-Shop .yes-products .item-product a .item .img-item {
+                    width: 30%;
+                    margin-right: 10px; }
+                    .mobile .nav-mobile .item-mobile .icon-search-cart .icon-cart .Cart-Shop .yes-products .item-product a .item .img-item img {
+                      width: 100%; }
+                  .mobile .nav-mobile .item-mobile .icon-search-cart .icon-cart .Cart-Shop .yes-products .item-product a .item .name-item {
+                    width: 70%; }
+                    .mobile .nav-mobile .item-mobile .icon-search-cart .icon-cart .Cart-Shop .yes-products .item-product a .item .name-item .name {
+                      margin-bottom: 5px;
+                      color: #6a6a6a;
+                      font-size: 17px; }
+                    .mobile .nav-mobile .item-mobile .icon-search-cart .icon-cart .Cart-Shop .yes-products .item-product a .item .name-item .price {
+                      display: inline-block;
+                      color: #bf9b5d;
+                      font-weight: bolder; }
+                    .mobile .nav-mobile .item-mobile .icon-search-cart .icon-cart .Cart-Shop .yes-products .item-product a .item .name-item .number {
+                      display: inline-block;
+                      color: #6a6a6a; }
+                .mobile .nav-mobile .item-mobile .icon-search-cart .icon-cart .Cart-Shop .yes-products .item-product a:hover .name-item .name {
+                  color: #bf9b5d; }
+            .mobile .nav-mobile .item-mobile .icon-search-cart .icon-cart .Cart-Shop .yes-products .total-product {
+              display: flex;
+              margin-bottom: 15px; }
+              .mobile .nav-mobile .item-mobile .icon-search-cart .icon-cart .Cart-Shop .yes-products .total-product .text-total, .mobile .nav-mobile .item-mobile .icon-search-cart .icon-cart .Cart-Shop .yes-products .total-product .price-total {
+                width: 50%; }
+                .mobile .nav-mobile .item-mobile .icon-search-cart .icon-cart .Cart-Shop .yes-products .total-product .text-total p, .mobile .nav-mobile .item-mobile .icon-search-cart .icon-cart .Cart-Shop .yes-products .total-product .price-total p {
+                  font-size: 20px;
+                  color: #fff; }
+              .mobile .nav-mobile .item-mobile .icon-search-cart .icon-cart .Cart-Shop .yes-products .total-product .price-total {
+                width: 50%;
+                text-align: center; }
+                .mobile .nav-mobile .item-mobile .icon-search-cart .icon-cart .Cart-Shop .yes-products .total-product .price-total p {
+                  color: #bf9b5d;
+                  font-weight: bolder; }
+            .mobile .nav-mobile .item-mobile .icon-search-cart .icon-cart .Cart-Shop .yes-products .check-product {
+              text-align: center; }
+              .mobile .nav-mobile .item-mobile .icon-search-cart .icon-cart .Cart-Shop .yes-products .check-product .checkoutCart, .mobile .nav-mobile .item-mobile .icon-search-cart .icon-cart .Cart-Shop .yes-products .check-product .viewCart {
+                border: 1px solid #bf9b5d;
+                margin-bottom: 10px;
+                transition: border ease-in-out 0.3s; }
+                .mobile .nav-mobile .item-mobile .icon-search-cart .icon-cart .Cart-Shop .yes-products .check-product .checkoutCart a, .mobile .nav-mobile .item-mobile .icon-search-cart .icon-cart .Cart-Shop .yes-products .check-product .viewCart a {
+                  padding: 15px;
+                  display: block;
+                  color: #bf9b5d;
+                  outline: none;
+                  font-weight: bolder;
+                  text-decoration: none; }
+                  .mobile .nav-mobile .item-mobile .icon-search-cart .icon-cart .Cart-Shop .yes-products .check-product .checkoutCart a i, .mobile .nav-mobile .item-mobile .icon-search-cart .icon-cart .Cart-Shop .yes-products .check-product .viewCart a i {
+                    color: #bf9b5d;
+                    margin-right: 10px; }
+                .mobile .nav-mobile .item-mobile .icon-search-cart .icon-cart .Cart-Shop .yes-products .check-product .checkoutCart:hover, .mobile .nav-mobile .item-mobile .icon-search-cart .icon-cart .Cart-Shop .yes-products .check-product .viewCart:hover {
+                  border: 1px solid black;
+                  background-color: #282828; }
+              .mobile .nav-mobile .item-mobile .icon-search-cart .icon-cart .Cart-Shop .yes-products .check-product .viewCart {
+                margin-bottom: 0px !important; }
+
+.navJS-full {
+  position: fixed;
+  width: 400px;
+  padding: 3rem;
+  transition: all ease-in-out 0.3s;
+  transform: translateX(-100%);
+  left: 0px;
+  z-index: 999;
+  opacity: 1 !important;
+  overflow: hidden;
+  top: 0px;
+  background: black;
+  bottom: 0px; }
+  .navJS-full .first-list-navJS {
+    transition: all ease-in-out 0.3s;
+    transform: translateX(0px); }
+    .navJS-full .first-list-navJS .button-close {
+      text-align: right; }
+      .navJS-full .first-list-navJS .button-close i {
+        font-size: 20px;
+        color: #6a6a6a;
+        cursor: pointer; }
+        .navJS-full .first-list-navJS .button-close i:hover {
+          color: #bf9b5d; }
+    .navJS-full .first-list-navJS .navJS ul li {
+      margin-top: 1rem;
+      padding: 1rem 0px;
+      display: flex;
+      margin-bottom: 0.5rem; }
+      .navJS-full .first-list-navJS .navJS ul li a {
+        outline: none;
+        text-decoration: none;
+        color: #6a6a6a; }
+      .navJS-full .first-list-navJS .navJS ul li .icon-right {
+        width: 100%;
+        text-align: right; }
+        .navJS-full .first-list-navJS .navJS ul li .icon-right i {
+          font-size: 15px;
+          color: #6a6a6a;
+          cursor: pointer; }
+      .navJS-full .first-list-navJS .navJS ul li .active {
+        color: #bf9b5d; }
+      .navJS-full .first-list-navJS .navJS ul li:hover a {
+        color: #bf9b5d; }
+      .navJS-full .first-list-navJS .navJS ul li:hover .icon-right i {
+        color: #bf9b5d; }
+  .navJS-full .later-list-navJS {
+    position: absolute;
+    /* width: 0px; */
+    top: 50px;
+    opacity: 0;
+    right: 15%;
+    transition: all ease-in-out 0.3s;
+    transform: translateX(352px);
+    z-index: 99;
+    background-color: black;
+    left: 15%; }
+    .navJS-full .later-list-navJS .top {
+      display: flex; }
+      .navJS-full .later-list-navJS .top p {
+        font-size: 20px;
+        color: #36373e; }
+      .navJS-full .later-list-navJS .top i {
+        width: 100%;
+        text-align: right;
+        font-size: 18px;
+        color: #6a6a6a;
+        cursor: pointer; }
+        .navJS-full .later-list-navJS .top i:hover {
+          color: #bf9b5d; }
+    .navJS-full .later-list-navJS ul li {
+      margin-top: 1rem;
+      padding: 1rem 0px;
+      margin-bottom: 0.5rem; }
+      .navJS-full .later-list-navJS ul li a {
+        outline: none;
+        text-decoration: none;
+        color: #6a6a6a; }
+      .navJS-full .later-list-navJS ul li:hover a {
+        color: #bf9b5d; }
+
+.background-full {
+  position: absolute;
+  left: 0px;
+  width: 100%;
+  right: 0px;
+  bottom: 0px;
+  top: 0px;
+  height: 100vh;
+  background-color: black;
+  opacity: 0.8;
+  display: none;
+  content: "";
+  z-index: 10; }
+
+.formSearch {
+  position: fixed;
+  top: 0px;
+  opacity: 0;
+  width: 0px;
+  z-index: 9;
+  transition: opacity linear 200ms;
+  overflow: hidden;
+  right: 0px;
+  left: 0px;
+  bottom: 0px;
+  height: 100vh;
+  background-color: black; }
+  .formSearch .SearchJs-Full {
+    padding: 30px;
+    height: 100vh; }
+    .formSearch .SearchJs-Full .button-close-from {
+      text-align: right; }
+      .formSearch .SearchJs-Full .button-close-from i {
+        font-size: 25px;
+        color: #6a6a6a;
+        cursor: pointer; }
+        .formSearch .SearchJs-Full .button-close-from i:hover {
+          color: #bf9b5d; }
+    .formSearch .SearchJs-Full .from-control {
+      height: 90vh;
+      display: flex;
+      align-items: center;
+      justify-content: center; }
+      .formSearch .SearchJs-Full .from-control form {
+        width: 100%;
+        text-align: center; }
+        .formSearch .SearchJs-Full .from-control form input {
+          border: none;
+          outline: none;
+          padding: 20px;
+          width: 90%;
+          background-color: #0d0d0d;
+          font-size: 20px;
+          color: #fff;
+          border-radius: 10px; }
+        .formSearch .SearchJs-Full .from-control form button {
+          border: none;
+          margin-left: -45px;
+          background-color: transparent; }
+          .formSearch .SearchJs-Full .from-control form button i {
+            font-size: 25px;
+            color: #6a6a6a;
+            cursor: pointer; }
+            .formSearch .SearchJs-Full .from-control form button i:hover {
+              color: #bf9b5d; }
+
+.slide {
+  margin-top: -3rem; }
+  .slide img {
+    height: 100vh; }
+  .slide .prev {
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    border-radius: 50%;
+    outline: none;
+    text-decoration: none;
+    background-color: #6a6a6a;
+    border: none; }
+    .slide .prev span {
+      font-size: 20px;
+      padding: 10px;
+      color: #fff; }
+  .slide .next {
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    outline: none;
+    text-decoration: none;
+    background-color: #6a6a6a;
+    border: none;
+    border-radius: 50%; }
+    .slide .next span {
+      font-size: 20px;
+      color: #fff;
+      padding: 10px; }
+  .slide .active .contact-item {
+    opacity: 1; }
+  .slide .contact-item {
+    color: #fff;
+    position: absolute;
+    top: 25%;
+    transition: all ease-in-out 0.2s;
+    left: 15%;
+    opacity: 0;
+    right: 15%; }
+    .slide .contact-item .top {
+      text-align: center;
+      margin-bottom: 25px; }
+      .slide .contact-item .top h1 {
+        font-size: 70px;
+        display: inline-block;
+        position: relative;
+        padding-bottom: 40px; }
+        .slide .contact-item .top h1::after {
+          position: absolute;
+          content: "";
+          background-image: url(../../images/slider-lines-2.webp);
+          height: 10px;
+          left: 20%;
+          bottom: 0px;
+          right: 20%;
+          background-repeat: no-repeat;
+          background-position: 50%; }
+    .slide .contact-item .center {
+      text-align: center;
+      margin-bottom: 50px; }
+      .slide .contact-item .center p {
+        font-size: 20px;
+        line-height: 1.5em; }
+    .slide .contact-item .bottom {
+      text-align: center; }
+      .slide .contact-item .bottom p {
+        font-size: 55px;
+        line-height: 1.5em;
+        padding-bottom: 2.5rem; }
+      .slide .contact-item .bottom span {
+        margin-top: 2.5rem;
+        border: 3px solid #bf9b5d;
+        color: #bf9b5d;
+        font-size: 15px;
+        font-weight: bolder;
+        padding: 15px 55px;
+        cursor: pointer;
+        transition: all ease-in-out 0.2s; }
+        .slide .contact-item .bottom span:hover {
+          background-color: #bf9b5d;
+          color: #fff; }
+
+main .main-1 {
+  background-image: url(../../images/brands-bkg.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50%;
+  padding: 2rem 0px; }
+  main .main-1 .col-md-4 .item-main-1, main .main-1 .col-md-4 .item-main-2, main .main-1 .col-md-4 .item-main-3 {
+    display: flex;
+    width: 100%; }
+    main .main-1 .col-md-4 .item-main-1 .item1, main .main-1 .col-md-4 .item-main-2 .item1, main .main-1 .col-md-4 .item-main-3 .item1 {
+      width: 50%; }
+      main .main-1 .col-md-4 .item-main-1 .item1 img, main .main-1 .col-md-4 .item-main-2 .item1 img, main .main-1 .col-md-4 .item-main-3 .item1 img {
+        width: 100%; }
+    main .main-1 .col-md-4 .item-main-1 .item2, main .main-1 .col-md-4 .item-main-2 .item2, main .main-1 .col-md-4 .item-main-3 .item2 {
+      width: 50%; }
+      main .main-1 .col-md-4 .item-main-1 .item2 img, main .main-1 .col-md-4 .item-main-2 .item2 img, main .main-1 .col-md-4 .item-main-3 .item2 img {
+        width: 100%; }
+main .main-2 .item-main-2 {
+  display: flex; }
+  main .main-2 .item-main-2 .item1-main-2, main .main-2 .item-main-2 .item2-main-2 {
+    position: relative; }
+    main .main-2 .item-main-2 .item1-main-2 img, main .main-2 .item-main-2 .item2-main-2 img {
+      width: 100%; }
+    main .main-2 .item-main-2 .item1-main-2::after, main .main-2 .item-main-2 .item2-main-2::after {
+      position: absolute;
+      content: "";
+      left: 20px;
+      right: 20px;
+      bottom: 30px;
+      top: 30px;
+      /* background: #fff; */
+      transition: all ease-in-out 0.3s;
+      border-top: 1px solid #fff;
+      border-bottom: 1px solid #fff;
+      transform: scale(0, 1); }
+    main .main-2 .item-main-2 .item1-main-2::before, main .main-2 .item-main-2 .item2-main-2::before {
+      position: absolute;
+      content: "";
+      left: 30px;
+      right: 30px;
+      bottom: 20px;
+      top: 20px;
+      /* background: #fff; */
+      transition: all ease-in-out 0.3s;
+      border-left: 1px solid #fff;
+      border-right: 1px solid #fff;
+      transform: scale(1, 0); }
+    main .main-2 .item-main-2 .item1-main-2:hover::after, main .main-2 .item-main-2 .item1-main-2:hover::before, main .main-2 .item-main-2 .item2-main-2:hover::after, main .main-2 .item-main-2 .item2-main-2:hover::before {
+      transform: scale(1); }
+main .main-3 {
+  margin-top: -3px;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  background-image: url(../../images/brands-bkg.webp); }
+  main .main-3 .col-md-12 .name-main-3 {
+    text-align: center; }
+    main .main-3 .col-md-12 .name-main-3 h5 {
+      font-size: 40px;
+      color: #6a6a6a;
+      font-weight: bolder;
+      position: relative;
+      padding-bottom: 20px; }
+      main .main-3 .col-md-12 .name-main-3 h5::after {
+        background-image: url(../../images/slider-lines-2.webp);
+        position: absolute;
+        content: "";
+        width: 50%;
+        height: 10px;
+        left: 25%;
+        right: 25%;
+        background-repeat: no-repeat;
+        background-position: 50%;
+        bottom: 0px; }
+  main .main-3 .item-row-1, main .main-3 .item-row-2 {
+    margin-top: 4rem; }
+    main .main-3 .item-row-1 .col-md-3 .item1, main .main-3 .item-row-1 .col-md-3 .item2, main .main-3 .item-row-1 .col-md-3 .item3, main .main-3 .item-row-1 .col-md-3 .item4, main .main-3 .item-row-2 .col-md-3 .item1, main .main-3 .item-row-2 .col-md-3 .item2, main .main-3 .item-row-2 .col-md-3 .item3, main .main-3 .item-row-2 .col-md-3 .item4 {
+      margin-bottom: 20px; }
+      main .main-3 .item-row-1 .col-md-3 .item1:hover .img .img1, main .main-3 .item-row-1 .col-md-3 .item2:hover .img .img1, main .main-3 .item-row-1 .col-md-3 .item3:hover .img .img1, main .main-3 .item-row-1 .col-md-3 .item4:hover .img .img1, main .main-3 .item-row-2 .col-md-3 .item1:hover .img .img1, main .main-3 .item-row-2 .col-md-3 .item2:hover .img .img1, main .main-3 .item-row-2 .col-md-3 .item3:hover .img .img1, main .main-3 .item-row-2 .col-md-3 .item4:hover .img .img1 {
+        opacity: 0 !important;
+        width: 0% !important; }
+      main .main-3 .item-row-1 .col-md-3 .item1:hover .img .img2, main .main-3 .item-row-1 .col-md-3 .item2:hover .img .img2, main .main-3 .item-row-1 .col-md-3 .item3:hover .img .img2, main .main-3 .item-row-1 .col-md-3 .item4:hover .img .img2, main .main-3 .item-row-2 .col-md-3 .item1:hover .img .img2, main .main-3 .item-row-2 .col-md-3 .item2:hover .img .img2, main .main-3 .item-row-2 .col-md-3 .item3:hover .img .img2, main .main-3 .item-row-2 .col-md-3 .item4:hover .img .img2 {
+        opacity: 1 !important;
+        width: 100% !important; }
+      main .main-3 .item-row-1 .col-md-3 .item1:hover .position-icon, main .main-3 .item-row-1 .col-md-3 .item2:hover .position-icon, main .main-3 .item-row-1 .col-md-3 .item3:hover .position-icon, main .main-3 .item-row-1 .col-md-3 .item4:hover .position-icon, main .main-3 .item-row-2 .col-md-3 .item1:hover .position-icon, main .main-3 .item-row-2 .col-md-3 .item2:hover .position-icon, main .main-3 .item-row-2 .col-md-3 .item3:hover .position-icon, main .main-3 .item-row-2 .col-md-3 .item4:hover .position-icon {
+        opacity: 1 !important; }
+      main .main-3 .item-row-1 .col-md-3 .item1:hover .item1-bottom, main .main-3 .item-row-1 .col-md-3 .item2:hover .item1-bottom, main .main-3 .item-row-1 .col-md-3 .item3:hover .item1-bottom, main .main-3 .item-row-1 .col-md-3 .item4:hover .item1-bottom, main .main-3 .item-row-2 .col-md-3 .item1:hover .item1-bottom, main .main-3 .item-row-2 .col-md-3 .item2:hover .item1-bottom, main .main-3 .item-row-2 .col-md-3 .item3:hover .item1-bottom, main .main-3 .item-row-2 .col-md-3 .item4:hover .item1-bottom {
+        opacity: 1 !important;
+        transform: translateY(0px);
+        visibility: visible !important; }
+      main .main-3 .item-row-1 .col-md-3 .item1 .item1-top, main .main-3 .item-row-1 .col-md-3 .item2 .item1-top, main .main-3 .item-row-1 .col-md-3 .item3 .item1-top, main .main-3 .item-row-1 .col-md-3 .item4 .item1-top, main .main-3 .item-row-2 .col-md-3 .item1 .item1-top, main .main-3 .item-row-2 .col-md-3 .item2 .item1-top, main .main-3 .item-row-2 .col-md-3 .item3 .item1-top, main .main-3 .item-row-2 .col-md-3 .item4 .item1-top {
+        background-color: #282828;
+        position: relative; }
+        main .main-3 .item-row-1 .col-md-3 .item1 .item1-top .SALE, main .main-3 .item-row-1 .col-md-3 .item2 .item1-top .SALE, main .main-3 .item-row-1 .col-md-3 .item3 .item1-top .SALE, main .main-3 .item-row-1 .col-md-3 .item4 .item1-top .SALE, main .main-3 .item-row-2 .col-md-3 .item1 .item1-top .SALE, main .main-3 .item-row-2 .col-md-3 .item2 .item1-top .SALE, main .main-3 .item-row-2 .col-md-3 .item3 .item1-top .SALE, main .main-3 .item-row-2 .col-md-3 .item4 .item1-top .SALE {
+          position: absolute;
+          display: inline-block;
+          padding: 5px;
+          left: 10px;
+          top: 10px;
+          background-color: #36373e; }
+          main .main-3 .item-row-1 .col-md-3 .item1 .item1-top .SALE span, main .main-3 .item-row-1 .col-md-3 .item2 .item1-top .SALE span, main .main-3 .item-row-1 .col-md-3 .item3 .item1-top .SALE span, main .main-3 .item-row-1 .col-md-3 .item4 .item1-top .SALE span, main .main-3 .item-row-2 .col-md-3 .item1 .item1-top .SALE span, main .main-3 .item-row-2 .col-md-3 .item2 .item1-top .SALE span, main .main-3 .item-row-2 .col-md-3 .item3 .item1-top .SALE span, main .main-3 .item-row-2 .col-md-3 .item4 .item1-top .SALE span {
+            color: #fff;
+            font-size: 15px;
+            font-weight: 700; }
+        main .main-3 .item-row-1 .col-md-3 .item1 .item1-top a, main .main-3 .item-row-1 .col-md-3 .item2 .item1-top a, main .main-3 .item-row-1 .col-md-3 .item3 .item1-top a, main .main-3 .item-row-1 .col-md-3 .item4 .item1-top a, main .main-3 .item-row-2 .col-md-3 .item1 .item1-top a, main .main-3 .item-row-2 .col-md-3 .item2 .item1-top a, main .main-3 .item-row-2 .col-md-3 .item3 .item1-top a, main .main-3 .item-row-2 .col-md-3 .item4 .item1-top a {
+          outline: none;
+          text-decoration: none; }
+          main .main-3 .item-row-1 .col-md-3 .item1 .item1-top a .img, main .main-3 .item-row-1 .col-md-3 .item2 .item1-top a .img, main .main-3 .item-row-1 .col-md-3 .item3 .item1-top a .img, main .main-3 .item-row-1 .col-md-3 .item4 .item1-top a .img, main .main-3 .item-row-2 .col-md-3 .item1 .item1-top a .img, main .main-3 .item-row-2 .col-md-3 .item2 .item1-top a .img, main .main-3 .item-row-2 .col-md-3 .item3 .item1-top a .img, main .main-3 .item-row-2 .col-md-3 .item4 .item1-top a .img {
+            padding: 2rem;
+            height: 342px;
+            display: flex;
+            justify-content: center;
+            align-items: center; }
+            main .main-3 .item-row-1 .col-md-3 .item1 .item1-top a .img .img1, main .main-3 .item-row-1 .col-md-3 .item1 .item1-top a .img .img2, main .main-3 .item-row-1 .col-md-3 .item2 .item1-top a .img .img1, main .main-3 .item-row-1 .col-md-3 .item2 .item1-top a .img .img2, main .main-3 .item-row-1 .col-md-3 .item3 .item1-top a .img .img1, main .main-3 .item-row-1 .col-md-3 .item3 .item1-top a .img .img2, main .main-3 .item-row-1 .col-md-3 .item4 .item1-top a .img .img1, main .main-3 .item-row-1 .col-md-3 .item4 .item1-top a .img .img2, main .main-3 .item-row-2 .col-md-3 .item1 .item1-top a .img .img1, main .main-3 .item-row-2 .col-md-3 .item1 .item1-top a .img .img2, main .main-3 .item-row-2 .col-md-3 .item2 .item1-top a .img .img1, main .main-3 .item-row-2 .col-md-3 .item2 .item1-top a .img .img2, main .main-3 .item-row-2 .col-md-3 .item3 .item1-top a .img .img1, main .main-3 .item-row-2 .col-md-3 .item3 .item1-top a .img .img2, main .main-3 .item-row-2 .col-md-3 .item4 .item1-top a .img .img1, main .main-3 .item-row-2 .col-md-3 .item4 .item1-top a .img .img2 {
+              transition: opacity linear 1000ms;
+              width: 100%;
+              height: 100%;
+              opacity: 1;
+              overflow: hidden; }
+            main .main-3 .item-row-1 .col-md-3 .item1 .item1-top a .img .img2, main .main-3 .item-row-1 .col-md-3 .item2 .item1-top a .img .img2, main .main-3 .item-row-1 .col-md-3 .item3 .item1-top a .img .img2, main .main-3 .item-row-1 .col-md-3 .item4 .item1-top a .img .img2, main .main-3 .item-row-2 .col-md-3 .item1 .item1-top a .img .img2, main .main-3 .item-row-2 .col-md-3 .item2 .item1-top a .img .img2, main .main-3 .item-row-2 .col-md-3 .item3 .item1-top a .img .img2, main .main-3 .item-row-2 .col-md-3 .item4 .item1-top a .img .img2 {
+              width: 0%;
+              opacity: 0; }
+        main .main-3 .item-row-1 .col-md-3 .item1 .item1-top .position-icon, main .main-3 .item-row-1 .col-md-3 .item2 .item1-top .position-icon, main .main-3 .item-row-1 .col-md-3 .item3 .item1-top .position-icon, main .main-3 .item-row-1 .col-md-3 .item4 .item1-top .position-icon, main .main-3 .item-row-2 .col-md-3 .item1 .item1-top .position-icon, main .main-3 .item-row-2 .col-md-3 .item2 .item1-top .position-icon, main .main-3 .item-row-2 .col-md-3 .item3 .item1-top .position-icon, main .main-3 .item-row-2 .col-md-3 .item4 .item1-top .position-icon {
+          position: absolute;
+          opacity: 0;
+          overflow: hidden;
+          transition: all ease-in-out 0.3s;
+          right: 10px;
+          top: 10px;
+          width: 28px; }
+          main .main-3 .item-row-1 .col-md-3 .item1 .item1-top .position-icon .balance1, main .main-3 .item-row-1 .col-md-3 .item1 .item1-top .position-icon .heart1, main .main-3 .item-row-1 .col-md-3 .item1 .item1-top .position-icon .search1, main .main-3 .item-row-1 .col-md-3 .item1 .item1-top .position-icon .balance2, main .main-3 .item-row-1 .col-md-3 .item1 .item1-top .position-icon .heart2, main .main-3 .item-row-1 .col-md-3 .item1 .item1-top .position-icon .search2, main .main-3 .item-row-1 .col-md-3 .item1 .item1-top .position-icon .balance3, main .main-3 .item-row-1 .col-md-3 .item1 .item1-top .position-icon .heart3, main .main-3 .item-row-1 .col-md-3 .item1 .item1-top .position-icon .search3, main .main-3 .item-row-1 .col-md-3 .item1 .item1-top .position-icon .balance4, main .main-3 .item-row-1 .col-md-3 .item1 .item1-top .position-icon .heart4, main .main-3 .item-row-1 .col-md-3 .item1 .item1-top .position-icon .search4, main .main-3 .item-row-1 .col-md-3 .item2 .item1-top .position-icon .balance1, main .main-3 .item-row-1 .col-md-3 .item2 .item1-top .position-icon .heart1, main .main-3 .item-row-1 .col-md-3 .item2 .item1-top .position-icon .search1, main .main-3 .item-row-1 .col-md-3 .item2 .item1-top .position-icon .balance2, main .main-3 .item-row-1 .col-md-3 .item2 .item1-top .position-icon .heart2, main .main-3 .item-row-1 .col-md-3 .item2 .item1-top .position-icon .search2, main .main-3 .item-row-1 .col-md-3 .item2 .item1-top .position-icon .balance3, main .main-3 .item-row-1 .col-md-3 .item2 .item1-top .position-icon .heart3, main .main-3 .item-row-1 .col-md-3 .item2 .item1-top .position-icon .search3, main .main-3 .item-row-1 .col-md-3 .item2 .item1-top .position-icon .balance4, main .main-3 .item-row-1 .col-md-3 .item2 .item1-top .position-icon .heart4, main .main-3 .item-row-1 .col-md-3 .item2 .item1-top .position-icon .search4, main .main-3 .item-row-1 .col-md-3 .item3 .item1-top .position-icon .balance1, main .main-3 .item-row-1 .col-md-3 .item3 .item1-top .position-icon .heart1, main .main-3 .item-row-1 .col-md-3 .item3 .item1-top .position-icon .search1, main .main-3 .item-row-1 .col-md-3 .item3 .item1-top .position-icon .balance2, main .main-3 .item-row-1 .col-md-3 .item3 .item1-top .position-icon .heart2, main .main-3 .item-row-1 .col-md-3 .item3 .item1-top .position-icon .search2, main .main-3 .item-row-1 .col-md-3 .item3 .item1-top .position-icon .balance3, main .main-3 .item-row-1 .col-md-3 .item3 .item1-top .position-icon .heart3, main .main-3 .item-row-1 .col-md-3 .item3 .item1-top .position-icon .search3, main .main-3 .item-row-1 .col-md-3 .item3 .item1-top .position-icon .balance4, main .main-3 .item-row-1 .col-md-3 .item3 .item1-top .position-icon .heart4, main .main-3 .item-row-1 .col-md-3 .item3 .item1-top .position-icon .search4, main .main-3 .item-row-1 .col-md-3 .item4 .item1-top .position-icon .balance1, main .main-3 .item-row-1 .col-md-3 .item4 .item1-top .position-icon .heart1, main .main-3 .item-row-1 .col-md-3 .item4 .item1-top .position-icon .search1, main .main-3 .item-row-1 .col-md-3 .item4 .item1-top .position-icon .balance2, main .main-3 .item-row-1 .col-md-3 .item4 .item1-top .position-icon .heart2, main .main-3 .item-row-1 .col-md-3 .item4 .item1-top .position-icon .search2, main .main-3 .item-row-1 .col-md-3 .item4 .item1-top .position-icon .balance3, main .main-3 .item-row-1 .col-md-3 .item4 .item1-top .position-icon .heart3, main .main-3 .item-row-1 .col-md-3 .item4 .item1-top .position-icon .search3, main .main-3 .item-row-1 .col-md-3 .item4 .item1-top .position-icon .balance4, main .main-3 .item-row-1 .col-md-3 .item4 .item1-top .position-icon .heart4, main .main-3 .item-row-1 .col-md-3 .item4 .item1-top .position-icon .search4, main .main-3 .item-row-2 .col-md-3 .item1 .item1-top .position-icon .balance1, main .main-3 .item-row-2 .col-md-3 .item1 .item1-top .position-icon .heart1, main .main-3 .item-row-2 .col-md-3 .item1 .item1-top .position-icon .search1, main .main-3 .item-row-2 .col-md-3 .item1 .item1-top .position-icon .balance2, main .main-3 .item-row-2 .col-md-3 .item1 .item1-top .position-icon .heart2, main .main-3 .item-row-2 .col-md-3 .item1 .item1-top .position-icon .search2, main .main-3 .item-row-2 .col-md-3 .item1 .item1-top .position-icon .balance3, main .main-3 .item-row-2 .col-md-3 .item1 .item1-top .position-icon .heart3, main .main-3 .item-row-2 .col-md-3 .item1 .item1-top .position-icon .search3, main .main-3 .item-row-2 .col-md-3 .item1 .item1-top .position-icon .balance4, main .main-3 .item-row-2 .col-md-3 .item1 .item1-top .position-icon .heart4, main .main-3 .item-row-2 .col-md-3 .item1 .item1-top .position-icon .search4, main .main-3 .item-row-2 .col-md-3 .item2 .item1-top .position-icon .balance1, main .main-3 .item-row-2 .col-md-3 .item2 .item1-top .position-icon .heart1, main .main-3 .item-row-2 .col-md-3 .item2 .item1-top .position-icon .search1, main .main-3 .item-row-2 .col-md-3 .item2 .item1-top .position-icon .balance2, main .main-3 .item-row-2 .col-md-3 .item2 .item1-top .position-icon .heart2, main .main-3 .item-row-2 .col-md-3 .item2 .item1-top .position-icon .search2, main .main-3 .item-row-2 .col-md-3 .item2 .item1-top .position-icon .balance3, main .main-3 .item-row-2 .col-md-3 .item2 .item1-top .position-icon .heart3, main .main-3 .item-row-2 .col-md-3 .item2 .item1-top .position-icon .search3, main .main-3 .item-row-2 .col-md-3 .item2 .item1-top .position-icon .balance4, main .main-3 .item-row-2 .col-md-3 .item2 .item1-top .position-icon .heart4, main .main-3 .item-row-2 .col-md-3 .item2 .item1-top .position-icon .search4, main .main-3 .item-row-2 .col-md-3 .item3 .item1-top .position-icon .balance1, main .main-3 .item-row-2 .col-md-3 .item3 .item1-top .position-icon .heart1, main .main-3 .item-row-2 .col-md-3 .item3 .item1-top .position-icon .search1, main .main-3 .item-row-2 .col-md-3 .item3 .item1-top .position-icon .balance2, main .main-3 .item-row-2 .col-md-3 .item3 .item1-top .position-icon .heart2, main .main-3 .item-row-2 .col-md-3 .item3 .item1-top .position-icon .search2, main .main-3 .item-row-2 .col-md-3 .item3 .item1-top .position-icon .balance3, main .main-3 .item-row-2 .col-md-3 .item3 .item1-top .position-icon .heart3, main .main-3 .item-row-2 .col-md-3 .item3 .item1-top .position-icon .search3, main .main-3 .item-row-2 .col-md-3 .item3 .item1-top .position-icon .balance4, main .main-3 .item-row-2 .col-md-3 .item3 .item1-top .position-icon .heart4, main .main-3 .item-row-2 .col-md-3 .item3 .item1-top .position-icon .search4, main .main-3 .item-row-2 .col-md-3 .item4 .item1-top .position-icon .balance1, main .main-3 .item-row-2 .col-md-3 .item4 .item1-top .position-icon .heart1, main .main-3 .item-row-2 .col-md-3 .item4 .item1-top .position-icon .search1, main .main-3 .item-row-2 .col-md-3 .item4 .item1-top .position-icon .balance2, main .main-3 .item-row-2 .col-md-3 .item4 .item1-top .position-icon .heart2, main .main-3 .item-row-2 .col-md-3 .item4 .item1-top .position-icon .search2, main .main-3 .item-row-2 .col-md-3 .item4 .item1-top .position-icon .balance3, main .main-3 .item-row-2 .col-md-3 .item4 .item1-top .position-icon .heart3, main .main-3 .item-row-2 .col-md-3 .item4 .item1-top .position-icon .search3, main .main-3 .item-row-2 .col-md-3 .item4 .item1-top .position-icon .balance4, main .main-3 .item-row-2 .col-md-3 .item4 .item1-top .position-icon .heart4, main .main-3 .item-row-2 .col-md-3 .item4 .item1-top .position-icon .search4 {
+            padding: 5px;
+            transition: all ease-in-out 0.3s;
+            margin-bottom: 10px; }
+            main .main-3 .item-row-1 .col-md-3 .item1 .item1-top .position-icon .balance1 i, main .main-3 .item-row-1 .col-md-3 .item1 .item1-top .position-icon .heart1 i, main .main-3 .item-row-1 .col-md-3 .item1 .item1-top .position-icon .search1 i, main .main-3 .item-row-1 .col-md-3 .item1 .item1-top .position-icon .balance2 i, main .main-3 .item-row-1 .col-md-3 .item1 .item1-top .position-icon .heart2 i, main .main-3 .item-row-1 .col-md-3 .item1 .item1-top .position-icon .search2 i, main .main-3 .item-row-1 .col-md-3 .item1 .item1-top .position-icon .balance3 i, main .main-3 .item-row-1 .col-md-3 .item1 .item1-top .position-icon .heart3 i, main .main-3 .item-row-1 .col-md-3 .item1 .item1-top .position-icon .search3 i, main .main-3 .item-row-1 .col-md-3 .item1 .item1-top .position-icon .balance4 i, main .main-3 .item-row-1 .col-md-3 .item1 .item1-top .position-icon .heart4 i, main .main-3 .item-row-1 .col-md-3 .item1 .item1-top .position-icon .search4 i, main .main-3 .item-row-1 .col-md-3 .item2 .item1-top .position-icon .balance1 i, main .main-3 .item-row-1 .col-md-3 .item2 .item1-top .position-icon .heart1 i, main .main-3 .item-row-1 .col-md-3 .item2 .item1-top .position-icon .search1 i, main .main-3 .item-row-1 .col-md-3 .item2 .item1-top .position-icon .balance2 i, main .main-3 .item-row-1 .col-md-3 .item2 .item1-top .position-icon .heart2 i, main .main-3 .item-row-1 .col-md-3 .item2 .item1-top .position-icon .search2 i, main .main-3 .item-row-1 .col-md-3 .item2 .item1-top .position-icon .balance3 i, main .main-3 .item-row-1 .col-md-3 .item2 .item1-top .position-icon .heart3 i, main .main-3 .item-row-1 .col-md-3 .item2 .item1-top .position-icon .search3 i, main .main-3 .item-row-1 .col-md-3 .item2 .item1-top .position-icon .balance4 i, main .main-3 .item-row-1 .col-md-3 .item2 .item1-top .position-icon .heart4 i, main .main-3 .item-row-1 .col-md-3 .item2 .item1-top .position-icon .search4 i, main .main-3 .item-row-1 .col-md-3 .item3 .item1-top .position-icon .balance1 i, main .main-3 .item-row-1 .col-md-3 .item3 .item1-top .position-icon .heart1 i, main .main-3 .item-row-1 .col-md-3 .item3 .item1-top .position-icon .search1 i, main .main-3 .item-row-1 .col-md-3 .item3 .item1-top .position-icon .balance2 i, main .main-3 .item-row-1 .col-md-3 .item3 .item1-top .position-icon .heart2 i, main .main-3 .item-row-1 .col-md-3 .item3 .item1-top .position-icon .search2 i, main .main-3 .item-row-1 .col-md-3 .item3 .item1-top .position-icon .balance3 i, main .main-3 .item-row-1 .col-md-3 .item3 .item1-top .position-icon .heart3 i, main .main-3 .item-row-1 .col-md-3 .item3 .item1-top .position-icon .search3 i, main .main-3 .item-row-1 .col-md-3 .item3 .item1-top .position-icon .balance4 i, main .main-3 .item-row-1 .col-md-3 .item3 .item1-top .position-icon .heart4 i, main .main-3 .item-row-1 .col-md-3 .item3 .item1-top .position-icon .search4 i, main .main-3 .item-row-1 .col-md-3 .item4 .item1-top .position-icon .balance1 i, main .main-3 .item-row-1 .col-md-3 .item4 .item1-top .position-icon .heart1 i, main .main-3 .item-row-1 .col-md-3 .item4 .item1-top .position-icon .search1 i, main .main-3 .item-row-1 .col-md-3 .item4 .item1-top .position-icon .balance2 i, main .main-3 .item-row-1 .col-md-3 .item4 .item1-top .position-icon .heart2 i, main .main-3 .item-row-1 .col-md-3 .item4 .item1-top .position-icon .search2 i, main .main-3 .item-row-1 .col-md-3 .item4 .item1-top .position-icon .balance3 i, main .main-3 .item-row-1 .col-md-3 .item4 .item1-top .position-icon .heart3 i, main .main-3 .item-row-1 .col-md-3 .item4 .item1-top .position-icon .search3 i, main .main-3 .item-row-1 .col-md-3 .item4 .item1-top .position-icon .balance4 i, main .main-3 .item-row-1 .col-md-3 .item4 .item1-top .position-icon .heart4 i, main .main-3 .item-row-1 .col-md-3 .item4 .item1-top .position-icon .search4 i, main .main-3 .item-row-2 .col-md-3 .item1 .item1-top .position-icon .balance1 i, main .main-3 .item-row-2 .col-md-3 .item1 .item1-top .position-icon .heart1 i, main .main-3 .item-row-2 .col-md-3 .item1 .item1-top .position-icon .search1 i, main .main-3 .item-row-2 .col-md-3 .item1 .item1-top .position-icon .balance2 i, main .main-3 .item-row-2 .col-md-3 .item1 .item1-top .position-icon .heart2 i, main .main-3 .item-row-2 .col-md-3 .item1 .item1-top .position-icon .search2 i, main .main-3 .item-row-2 .col-md-3 .item1 .item1-top .position-icon .balance3 i, main .main-3 .item-row-2 .col-md-3 .item1 .item1-top .position-icon .heart3 i, main .main-3 .item-row-2 .col-md-3 .item1 .item1-top .position-icon .search3 i, main .main-3 .item-row-2 .col-md-3 .item1 .item1-top .position-icon .balance4 i, main .main-3 .item-row-2 .col-md-3 .item1 .item1-top .position-icon .heart4 i, main .main-3 .item-row-2 .col-md-3 .item1 .item1-top .position-icon .search4 i, main .main-3 .item-row-2 .col-md-3 .item2 .item1-top .position-icon .balance1 i, main .main-3 .item-row-2 .col-md-3 .item2 .item1-top .position-icon .heart1 i, main .main-3 .item-row-2 .col-md-3 .item2 .item1-top .position-icon .search1 i, main .main-3 .item-row-2 .col-md-3 .item2 .item1-top .position-icon .balance2 i, main .main-3 .item-row-2 .col-md-3 .item2 .item1-top .position-icon .heart2 i, main .main-3 .item-row-2 .col-md-3 .item2 .item1-top .position-icon .search2 i, main .main-3 .item-row-2 .col-md-3 .item2 .item1-top .position-icon .balance3 i, main .main-3 .item-row-2 .col-md-3 .item2 .item1-top .position-icon .heart3 i, main .main-3 .item-row-2 .col-md-3 .item2 .item1-top .position-icon .search3 i, main .main-3 .item-row-2 .col-md-3 .item2 .item1-top .position-icon .balance4 i, main .main-3 .item-row-2 .col-md-3 .item2 .item1-top .position-icon .heart4 i, main .main-3 .item-row-2 .col-md-3 .item2 .item1-top .position-icon .search4 i, main .main-3 .item-row-2 .col-md-3 .item3 .item1-top .position-icon .balance1 i, main .main-3 .item-row-2 .col-md-3 .item3 .item1-top .position-icon .heart1 i, main .main-3 .item-row-2 .col-md-3 .item3 .item1-top .position-icon .search1 i, main .main-3 .item-row-2 .col-md-3 .item3 .item1-top .position-icon .balance2 i, main .main-3 .item-row-2 .col-md-3 .item3 .item1-top .position-icon .heart2 i, main .main-3 .item-row-2 .col-md-3 .item3 .item1-top .position-icon .search2 i, main .main-3 .item-row-2 .col-md-3 .item3 .item1-top .position-icon .balance3 i, main .main-3 .item-row-2 .col-md-3 .item3 .item1-top .position-icon .heart3 i, main .main-3 .item-row-2 .col-md-3 .item3 .item1-top .position-icon .search3 i, main .main-3 .item-row-2 .col-md-3 .item3 .item1-top .position-icon .balance4 i, main .main-3 .item-row-2 .col-md-3 .item3 .item1-top .position-icon .heart4 i, main .main-3 .item-row-2 .col-md-3 .item3 .item1-top .position-icon .search4 i, main .main-3 .item-row-2 .col-md-3 .item4 .item1-top .position-icon .balance1 i, main .main-3 .item-row-2 .col-md-3 .item4 .item1-top .position-icon .heart1 i, main .main-3 .item-row-2 .col-md-3 .item4 .item1-top .position-icon .search1 i, main .main-3 .item-row-2 .col-md-3 .item4 .item1-top .position-icon .balance2 i, main .main-3 .item-row-2 .col-md-3 .item4 .item1-top .position-icon .heart2 i, main .main-3 .item-row-2 .col-md-3 .item4 .item1-top .position-icon .search2 i, main .main-3 .item-row-2 .col-md-3 .item4 .item1-top .position-icon .balance3 i, main .main-3 .item-row-2 .col-md-3 .item4 .item1-top .position-icon .heart3 i, main .main-3 .item-row-2 .col-md-3 .item4 .item1-top .position-icon .search3 i, main .main-3 .item-row-2 .col-md-3 .item4 .item1-top .position-icon .balance4 i, main .main-3 .item-row-2 .col-md-3 .item4 .item1-top .position-icon .heart4 i, main .main-3 .item-row-2 .col-md-3 .item4 .item1-top .position-icon .search4 i {
+              color: #bf9b5d;
+              cursor: pointer;
+              font-size: 18px; }
+          main .main-3 .item-row-1 .col-md-3 .item1 .item1-top .position-icon .balance5, main .main-3 .item-row-1 .col-md-3 .item1 .item1-top .position-icon .heart5, main .main-3 .item-row-1 .col-md-3 .item1 .item1-top .position-icon .search5, main .main-3 .item-row-1 .col-md-3 .item1 .item1-top .position-icon .balance6, main .main-3 .item-row-1 .col-md-3 .item1 .item1-top .position-icon .heart6, main .main-3 .item-row-1 .col-md-3 .item1 .item1-top .position-icon .search6, main .main-3 .item-row-1 .col-md-3 .item1 .item1-top .position-icon .balance7, main .main-3 .item-row-1 .col-md-3 .item1 .item1-top .position-icon .heart7, main .main-3 .item-row-1 .col-md-3 .item1 .item1-top .position-icon .search7, main .main-3 .item-row-1 .col-md-3 .item1 .item1-top .position-icon .balance8, main .main-3 .item-row-1 .col-md-3 .item1 .item1-top .position-icon .heart8, main .main-3 .item-row-1 .col-md-3 .item1 .item1-top .position-icon .search8, main .main-3 .item-row-1 .col-md-3 .item2 .item1-top .position-icon .balance5, main .main-3 .item-row-1 .col-md-3 .item2 .item1-top .position-icon .heart5, main .main-3 .item-row-1 .col-md-3 .item2 .item1-top .position-icon .search5, main .main-3 .item-row-1 .col-md-3 .item2 .item1-top .position-icon .balance6, main .main-3 .item-row-1 .col-md-3 .item2 .item1-top .position-icon .heart6, main .main-3 .item-row-1 .col-md-3 .item2 .item1-top .position-icon .search6, main .main-3 .item-row-1 .col-md-3 .item2 .item1-top .position-icon .balance7, main .main-3 .item-row-1 .col-md-3 .item2 .item1-top .position-icon .heart7, main .main-3 .item-row-1 .col-md-3 .item2 .item1-top .position-icon .search7, main .main-3 .item-row-1 .col-md-3 .item2 .item1-top .position-icon .balance8, main .main-3 .item-row-1 .col-md-3 .item2 .item1-top .position-icon .heart8, main .main-3 .item-row-1 .col-md-3 .item2 .item1-top .position-icon .search8, main .main-3 .item-row-1 .col-md-3 .item3 .item1-top .position-icon .balance5, main .main-3 .item-row-1 .col-md-3 .item3 .item1-top .position-icon .heart5, main .main-3 .item-row-1 .col-md-3 .item3 .item1-top .position-icon .search5, main .main-3 .item-row-1 .col-md-3 .item3 .item1-top .position-icon .balance6, main .main-3 .item-row-1 .col-md-3 .item3 .item1-top .position-icon .heart6, main .main-3 .item-row-1 .col-md-3 .item3 .item1-top .position-icon .search6, main .main-3 .item-row-1 .col-md-3 .item3 .item1-top .position-icon .balance7, main .main-3 .item-row-1 .col-md-3 .item3 .item1-top .position-icon .heart7, main .main-3 .item-row-1 .col-md-3 .item3 .item1-top .position-icon .search7, main .main-3 .item-row-1 .col-md-3 .item3 .item1-top .position-icon .balance8, main .main-3 .item-row-1 .col-md-3 .item3 .item1-top .position-icon .heart8, main .main-3 .item-row-1 .col-md-3 .item3 .item1-top .position-icon .search8, main .main-3 .item-row-1 .col-md-3 .item4 .item1-top .position-icon .balance5, main .main-3 .item-row-1 .col-md-3 .item4 .item1-top .position-icon .heart5, main .main-3 .item-row-1 .col-md-3 .item4 .item1-top .position-icon .search5, main .main-3 .item-row-1 .col-md-3 .item4 .item1-top .position-icon .balance6, main .main-3 .item-row-1 .col-md-3 .item4 .item1-top .position-icon .heart6, main .main-3 .item-row-1 .col-md-3 .item4 .item1-top .position-icon .search6, main .main-3 .item-row-1 .col-md-3 .item4 .item1-top .position-icon .balance7, main .main-3 .item-row-1 .col-md-3 .item4 .item1-top .position-icon .heart7, main .main-3 .item-row-1 .col-md-3 .item4 .item1-top .position-icon .search7, main .main-3 .item-row-1 .col-md-3 .item4 .item1-top .position-icon .balance8, main .main-3 .item-row-1 .col-md-3 .item4 .item1-top .position-icon .heart8, main .main-3 .item-row-1 .col-md-3 .item4 .item1-top .position-icon .search8, main .main-3 .item-row-2 .col-md-3 .item1 .item1-top .position-icon .balance5, main .main-3 .item-row-2 .col-md-3 .item1 .item1-top .position-icon .heart5, main .main-3 .item-row-2 .col-md-3 .item1 .item1-top .position-icon .search5, main .main-3 .item-row-2 .col-md-3 .item1 .item1-top .position-icon .balance6, main .main-3 .item-row-2 .col-md-3 .item1 .item1-top .position-icon .heart6, main .main-3 .item-row-2 .col-md-3 .item1 .item1-top .position-icon .search6, main .main-3 .item-row-2 .col-md-3 .item1 .item1-top .position-icon .balance7, main .main-3 .item-row-2 .col-md-3 .item1 .item1-top .position-icon .heart7, main .main-3 .item-row-2 .col-md-3 .item1 .item1-top .position-icon .search7, main .main-3 .item-row-2 .col-md-3 .item1 .item1-top .position-icon .balance8, main .main-3 .item-row-2 .col-md-3 .item1 .item1-top .position-icon .heart8, main .main-3 .item-row-2 .col-md-3 .item1 .item1-top .position-icon .search8, main .main-3 .item-row-2 .col-md-3 .item2 .item1-top .position-icon .balance5, main .main-3 .item-row-2 .col-md-3 .item2 .item1-top .position-icon .heart5, main .main-3 .item-row-2 .col-md-3 .item2 .item1-top .position-icon .search5, main .main-3 .item-row-2 .col-md-3 .item2 .item1-top .position-icon .balance6, main .main-3 .item-row-2 .col-md-3 .item2 .item1-top .position-icon .heart6, main .main-3 .item-row-2 .col-md-3 .item2 .item1-top .position-icon .search6, main .main-3 .item-row-2 .col-md-3 .item2 .item1-top .position-icon .balance7, main .main-3 .item-row-2 .col-md-3 .item2 .item1-top .position-icon .heart7, main .main-3 .item-row-2 .col-md-3 .item2 .item1-top .position-icon .search7, main .main-3 .item-row-2 .col-md-3 .item2 .item1-top .position-icon .balance8, main .main-3 .item-row-2 .col-md-3 .item2 .item1-top .position-icon .heart8, main .main-3 .item-row-2 .col-md-3 .item2 .item1-top .position-icon .search8, main .main-3 .item-row-2 .col-md-3 .item3 .item1-top .position-icon .balance5, main .main-3 .item-row-2 .col-md-3 .item3 .item1-top .position-icon .heart5, main .main-3 .item-row-2 .col-md-3 .item3 .item1-top .position-icon .search5, main .main-3 .item-row-2 .col-md-3 .item3 .item1-top .position-icon .balance6, main .main-3 .item-row-2 .col-md-3 .item3 .item1-top .position-icon .heart6, main .main-3 .item-row-2 .col-md-3 .item3 .item1-top .position-icon .search6, main .main-3 .item-row-2 .col-md-3 .item3 .item1-top .position-icon .balance7, main .main-3 .item-row-2 .col-md-3 .item3 .item1-top .position-icon .heart7, main .main-3 .item-row-2 .col-md-3 .item3 .item1-top .position-icon .search7, main .main-3 .item-row-2 .col-md-3 .item3 .item1-top .position-icon .balance8, main .main-3 .item-row-2 .col-md-3 .item3 .item1-top .position-icon .heart8, main .main-3 .item-row-2 .col-md-3 .item3 .item1-top .position-icon .search8, main .main-3 .item-row-2 .col-md-3 .item4 .item1-top .position-icon .balance5, main .main-3 .item-row-2 .col-md-3 .item4 .item1-top .position-icon .heart5, main .main-3 .item-row-2 .col-md-3 .item4 .item1-top .position-icon .search5, main .main-3 .item-row-2 .col-md-3 .item4 .item1-top .position-icon .balance6, main .main-3 .item-row-2 .col-md-3 .item4 .item1-top .position-icon .heart6, main .main-3 .item-row-2 .col-md-3 .item4 .item1-top .position-icon .search6, main .main-3 .item-row-2 .col-md-3 .item4 .item1-top .position-icon .balance7, main .main-3 .item-row-2 .col-md-3 .item4 .item1-top .position-icon .heart7, main .main-3 .item-row-2 .col-md-3 .item4 .item1-top .position-icon .search7, main .main-3 .item-row-2 .col-md-3 .item4 .item1-top .position-icon .balance8, main .main-3 .item-row-2 .col-md-3 .item4 .item1-top .position-icon .heart8, main .main-3 .item-row-2 .col-md-3 .item4 .item1-top .position-icon .search8 {
+            padding: 5px;
+            transition: all ease-in-out 0.3s;
+            margin-bottom: 10px; }
+            main .main-3 .item-row-1 .col-md-3 .item1 .item1-top .position-icon .balance5 i, main .main-3 .item-row-1 .col-md-3 .item1 .item1-top .position-icon .heart5 i, main .main-3 .item-row-1 .col-md-3 .item1 .item1-top .position-icon .search5 i, main .main-3 .item-row-1 .col-md-3 .item1 .item1-top .position-icon .balance6 i, main .main-3 .item-row-1 .col-md-3 .item1 .item1-top .position-icon .heart6 i, main .main-3 .item-row-1 .col-md-3 .item1 .item1-top .position-icon .search6 i, main .main-3 .item-row-1 .col-md-3 .item1 .item1-top .position-icon .balance7 i, main .main-3 .item-row-1 .col-md-3 .item1 .item1-top .position-icon .heart7 i, main .main-3 .item-row-1 .col-md-3 .item1 .item1-top .position-icon .search7 i, main .main-3 .item-row-1 .col-md-3 .item1 .item1-top .position-icon .balance8 i, main .main-3 .item-row-1 .col-md-3 .item1 .item1-top .position-icon .heart8 i, main .main-3 .item-row-1 .col-md-3 .item1 .item1-top .position-icon .search8 i, main .main-3 .item-row-1 .col-md-3 .item2 .item1-top .position-icon .balance5 i, main .main-3 .item-row-1 .col-md-3 .item2 .item1-top .position-icon .heart5 i, main .main-3 .item-row-1 .col-md-3 .item2 .item1-top .position-icon .search5 i, main .main-3 .item-row-1 .col-md-3 .item2 .item1-top .position-icon .balance6 i, main .main-3 .item-row-1 .col-md-3 .item2 .item1-top .position-icon .heart6 i, main .main-3 .item-row-1 .col-md-3 .item2 .item1-top .position-icon .search6 i, main .main-3 .item-row-1 .col-md-3 .item2 .item1-top .position-icon .balance7 i, main .main-3 .item-row-1 .col-md-3 .item2 .item1-top .position-icon .heart7 i, main .main-3 .item-row-1 .col-md-3 .item2 .item1-top .position-icon .search7 i, main .main-3 .item-row-1 .col-md-3 .item2 .item1-top .position-icon .balance8 i, main .main-3 .item-row-1 .col-md-3 .item2 .item1-top .position-icon .heart8 i, main .main-3 .item-row-1 .col-md-3 .item2 .item1-top .position-icon .search8 i, main .main-3 .item-row-1 .col-md-3 .item3 .item1-top .position-icon .balance5 i, main .main-3 .item-row-1 .col-md-3 .item3 .item1-top .position-icon .heart5 i, main .main-3 .item-row-1 .col-md-3 .item3 .item1-top .position-icon .search5 i, main .main-3 .item-row-1 .col-md-3 .item3 .item1-top .position-icon .balance6 i, main .main-3 .item-row-1 .col-md-3 .item3 .item1-top .position-icon .heart6 i, main .main-3 .item-row-1 .col-md-3 .item3 .item1-top .position-icon .search6 i, main .main-3 .item-row-1 .col-md-3 .item3 .item1-top .position-icon .balance7 i, main .main-3 .item-row-1 .col-md-3 .item3 .item1-top .position-icon .heart7 i, main .main-3 .item-row-1 .col-md-3 .item3 .item1-top .position-icon .search7 i, main .main-3 .item-row-1 .col-md-3 .item3 .item1-top .position-icon .balance8 i, main .main-3 .item-row-1 .col-md-3 .item3 .item1-top .position-icon .heart8 i, main .main-3 .item-row-1 .col-md-3 .item3 .item1-top .position-icon .search8 i, main .main-3 .item-row-1 .col-md-3 .item4 .item1-top .position-icon .balance5 i, main .main-3 .item-row-1 .col-md-3 .item4 .item1-top .position-icon .heart5 i, main .main-3 .item-row-1 .col-md-3 .item4 .item1-top .position-icon .search5 i, main .main-3 .item-row-1 .col-md-3 .item4 .item1-top .position-icon .balance6 i, main .main-3 .item-row-1 .col-md-3 .item4 .item1-top .position-icon .heart6 i, main .main-3 .item-row-1 .col-md-3 .item4 .item1-top .position-icon .search6 i, main .main-3 .item-row-1 .col-md-3 .item4 .item1-top .position-icon .balance7 i, main .main-3 .item-row-1 .col-md-3 .item4 .item1-top .position-icon .heart7 i, main .main-3 .item-row-1 .col-md-3 .item4 .item1-top .position-icon .search7 i, main .main-3 .item-row-1 .col-md-3 .item4 .item1-top .position-icon .balance8 i, main .main-3 .item-row-1 .col-md-3 .item4 .item1-top .position-icon .heart8 i, main .main-3 .item-row-1 .col-md-3 .item4 .item1-top .position-icon .search8 i, main .main-3 .item-row-2 .col-md-3 .item1 .item1-top .position-icon .balance5 i, main .main-3 .item-row-2 .col-md-3 .item1 .item1-top .position-icon .heart5 i, main .main-3 .item-row-2 .col-md-3 .item1 .item1-top .position-icon .search5 i, main .main-3 .item-row-2 .col-md-3 .item1 .item1-top .position-icon .balance6 i, main .main-3 .item-row-2 .col-md-3 .item1 .item1-top .position-icon .heart6 i, main .main-3 .item-row-2 .col-md-3 .item1 .item1-top .position-icon .search6 i, main .main-3 .item-row-2 .col-md-3 .item1 .item1-top .position-icon .balance7 i, main .main-3 .item-row-2 .col-md-3 .item1 .item1-top .position-icon .heart7 i, main .main-3 .item-row-2 .col-md-3 .item1 .item1-top .position-icon .search7 i, main .main-3 .item-row-2 .col-md-3 .item1 .item1-top .position-icon .balance8 i, main .main-3 .item-row-2 .col-md-3 .item1 .item1-top .position-icon .heart8 i, main .main-3 .item-row-2 .col-md-3 .item1 .item1-top .position-icon .search8 i, main .main-3 .item-row-2 .col-md-3 .item2 .item1-top .position-icon .balance5 i, main .main-3 .item-row-2 .col-md-3 .item2 .item1-top .position-icon .heart5 i, main .main-3 .item-row-2 .col-md-3 .item2 .item1-top .position-icon .search5 i, main .main-3 .item-row-2 .col-md-3 .item2 .item1-top .position-icon .balance6 i, main .main-3 .item-row-2 .col-md-3 .item2 .item1-top .position-icon .heart6 i, main .main-3 .item-row-2 .col-md-3 .item2 .item1-top .position-icon .search6 i, main .main-3 .item-row-2 .col-md-3 .item2 .item1-top .position-icon .balance7 i, main .main-3 .item-row-2 .col-md-3 .item2 .item1-top .position-icon .heart7 i, main .main-3 .item-row-2 .col-md-3 .item2 .item1-top .position-icon .search7 i, main .main-3 .item-row-2 .col-md-3 .item2 .item1-top .position-icon .balance8 i, main .main-3 .item-row-2 .col-md-3 .item2 .item1-top .position-icon .heart8 i, main .main-3 .item-row-2 .col-md-3 .item2 .item1-top .position-icon .search8 i, main .main-3 .item-row-2 .col-md-3 .item3 .item1-top .position-icon .balance5 i, main .main-3 .item-row-2 .col-md-3 .item3 .item1-top .position-icon .heart5 i, main .main-3 .item-row-2 .col-md-3 .item3 .item1-top .position-icon .search5 i, main .main-3 .item-row-2 .col-md-3 .item3 .item1-top .position-icon .balance6 i, main .main-3 .item-row-2 .col-md-3 .item3 .item1-top .position-icon .heart6 i, main .main-3 .item-row-2 .col-md-3 .item3 .item1-top .position-icon .search6 i, main .main-3 .item-row-2 .col-md-3 .item3 .item1-top .position-icon .balance7 i, main .main-3 .item-row-2 .col-md-3 .item3 .item1-top .position-icon .heart7 i, main .main-3 .item-row-2 .col-md-3 .item3 .item1-top .position-icon .search7 i, main .main-3 .item-row-2 .col-md-3 .item3 .item1-top .position-icon .balance8 i, main .main-3 .item-row-2 .col-md-3 .item3 .item1-top .position-icon .heart8 i, main .main-3 .item-row-2 .col-md-3 .item3 .item1-top .position-icon .search8 i, main .main-3 .item-row-2 .col-md-3 .item4 .item1-top .position-icon .balance5 i, main .main-3 .item-row-2 .col-md-3 .item4 .item1-top .position-icon .heart5 i, main .main-3 .item-row-2 .col-md-3 .item4 .item1-top .position-icon .search5 i, main .main-3 .item-row-2 .col-md-3 .item4 .item1-top .position-icon .balance6 i, main .main-3 .item-row-2 .col-md-3 .item4 .item1-top .position-icon .heart6 i, main .main-3 .item-row-2 .col-md-3 .item4 .item1-top .position-icon .search6 i, main .main-3 .item-row-2 .col-md-3 .item4 .item1-top .position-icon .balance7 i, main .main-3 .item-row-2 .col-md-3 .item4 .item1-top .position-icon .heart7 i, main .main-3 .item-row-2 .col-md-3 .item4 .item1-top .position-icon .search7 i, main .main-3 .item-row-2 .col-md-3 .item4 .item1-top .position-icon .balance8 i, main .main-3 .item-row-2 .col-md-3 .item4 .item1-top .position-icon .heart8 i, main .main-3 .item-row-2 .col-md-3 .item4 .item1-top .position-icon .search8 i {
+              color: #bf9b5d;
+              cursor: pointer;
+              font-size: 18px; }
+      main .main-3 .item-row-1 .col-md-3 .item1 .item1-center, main .main-3 .item-row-1 .col-md-3 .item2 .item1-center, main .main-3 .item-row-1 .col-md-3 .item3 .item1-center, main .main-3 .item-row-1 .col-md-3 .item4 .item1-center, main .main-3 .item-row-2 .col-md-3 .item1 .item1-center, main .main-3 .item-row-2 .col-md-3 .item2 .item1-center, main .main-3 .item-row-2 .col-md-3 .item3 .item1-center, main .main-3 .item-row-2 .col-md-3 .item4 .item1-center {
+        margin-top: 1rem; }
+        main .main-3 .item-row-1 .col-md-3 .item1 .item1-center .name, main .main-3 .item-row-1 .col-md-3 .item2 .item1-center .name, main .main-3 .item-row-1 .col-md-3 .item3 .item1-center .name, main .main-3 .item-row-1 .col-md-3 .item4 .item1-center .name, main .main-3 .item-row-2 .col-md-3 .item1 .item1-center .name, main .main-3 .item-row-2 .col-md-3 .item2 .item1-center .name, main .main-3 .item-row-2 .col-md-3 .item3 .item1-center .name, main .main-3 .item-row-2 .col-md-3 .item4 .item1-center .name {
+          margin-bottom: 10px; }
+          main .main-3 .item-row-1 .col-md-3 .item1 .item1-center .name a, main .main-3 .item-row-1 .col-md-3 .item2 .item1-center .name a, main .main-3 .item-row-1 .col-md-3 .item3 .item1-center .name a, main .main-3 .item-row-1 .col-md-3 .item4 .item1-center .name a, main .main-3 .item-row-2 .col-md-3 .item1 .item1-center .name a, main .main-3 .item-row-2 .col-md-3 .item2 .item1-center .name a, main .main-3 .item-row-2 .col-md-3 .item3 .item1-center .name a, main .main-3 .item-row-2 .col-md-3 .item4 .item1-center .name a {
+            outline: none;
+            text-decoration: none;
+            color: #6a6a6a; }
+        main .main-3 .item-row-1 .col-md-3 .item1 .item1-center .price-star, main .main-3 .item-row-1 .col-md-3 .item2 .item1-center .price-star, main .main-3 .item-row-1 .col-md-3 .item3 .item1-center .price-star, main .main-3 .item-row-1 .col-md-3 .item4 .item1-center .price-star, main .main-3 .item-row-2 .col-md-3 .item1 .item1-center .price-star, main .main-3 .item-row-2 .col-md-3 .item2 .item1-center .price-star, main .main-3 .item-row-2 .col-md-3 .item3 .item1-center .price-star, main .main-3 .item-row-2 .col-md-3 .item4 .item1-center .price-star {
+          margin-bottom: 5px;
+          display: flex; }
+          main .main-3 .item-row-1 .col-md-3 .item1 .item1-center .price-star p, main .main-3 .item-row-1 .col-md-3 .item2 .item1-center .price-star p, main .main-3 .item-row-1 .col-md-3 .item3 .item1-center .price-star p, main .main-3 .item-row-1 .col-md-3 .item4 .item1-center .price-star p, main .main-3 .item-row-2 .col-md-3 .item1 .item1-center .price-star p, main .main-3 .item-row-2 .col-md-3 .item2 .item1-center .price-star p, main .main-3 .item-row-2 .col-md-3 .item3 .item1-center .price-star p, main .main-3 .item-row-2 .col-md-3 .item4 .item1-center .price-star p {
+            width: 50%;
+            color: #6a6a6a; }
+          main .main-3 .item-row-1 .col-md-3 .item1 .item1-center .price-star .star, main .main-3 .item-row-1 .col-md-3 .item2 .item1-center .price-star .star, main .main-3 .item-row-1 .col-md-3 .item3 .item1-center .price-star .star, main .main-3 .item-row-1 .col-md-3 .item4 .item1-center .price-star .star, main .main-3 .item-row-2 .col-md-3 .item1 .item1-center .price-star .star, main .main-3 .item-row-2 .col-md-3 .item2 .item1-center .price-star .star, main .main-3 .item-row-2 .col-md-3 .item3 .item1-center .price-star .star, main .main-3 .item-row-2 .col-md-3 .item4 .item1-center .price-star .star {
+            width: 50%;
+            text-align: right; }
+            main .main-3 .item-row-1 .col-md-3 .item1 .item1-center .price-star .star i, main .main-3 .item-row-1 .col-md-3 .item2 .item1-center .price-star .star i, main .main-3 .item-row-1 .col-md-3 .item3 .item1-center .price-star .star i, main .main-3 .item-row-1 .col-md-3 .item4 .item1-center .price-star .star i, main .main-3 .item-row-2 .col-md-3 .item1 .item1-center .price-star .star i, main .main-3 .item-row-2 .col-md-3 .item2 .item1-center .price-star .star i, main .main-3 .item-row-2 .col-md-3 .item3 .item1-center .price-star .star i, main .main-3 .item-row-2 .col-md-3 .item4 .item1-center .price-star .star i {
+              color: #bf9b5d;
+              font-size: 10px; }
+      main .main-3 .item-row-1 .col-md-3 .item1 .item1-bottom, main .main-3 .item-row-1 .col-md-3 .item2 .item1-bottom, main .main-3 .item-row-1 .col-md-3 .item3 .item1-bottom, main .main-3 .item-row-1 .col-md-3 .item4 .item1-bottom, main .main-3 .item-row-2 .col-md-3 .item1 .item1-bottom, main .main-3 .item-row-2 .col-md-3 .item2 .item1-bottom, main .main-3 .item-row-2 .col-md-3 .item3 .item1-bottom, main .main-3 .item-row-2 .col-md-3 .item4 .item1-bottom {
+        margin-top: 1rem;
+        text-align: center;
+        background-color: #282828;
+        visibility: hidden;
+        transform: translateY(20px);
+        opacity: 0;
+        transition: all ease-in-out 0.3s;
+        display: block; }
+        main .main-3 .item-row-1 .col-md-3 .item1 .item1-bottom:hover a, main .main-3 .item-row-1 .col-md-3 .item2 .item1-bottom:hover a, main .main-3 .item-row-1 .col-md-3 .item3 .item1-bottom:hover a, main .main-3 .item-row-1 .col-md-3 .item4 .item1-bottom:hover a, main .main-3 .item-row-2 .col-md-3 .item1 .item1-bottom:hover a, main .main-3 .item-row-2 .col-md-3 .item2 .item1-bottom:hover a, main .main-3 .item-row-2 .col-md-3 .item3 .item1-bottom:hover a, main .main-3 .item-row-2 .col-md-3 .item4 .item1-bottom:hover a {
+          border: 2px solid #252525 !important; }
+        main .main-3 .item-row-1 .col-md-3 .item1 .item1-bottom a, main .main-3 .item-row-1 .col-md-3 .item2 .item1-bottom a, main .main-3 .item-row-1 .col-md-3 .item3 .item1-bottom a, main .main-3 .item-row-1 .col-md-3 .item4 .item1-bottom a, main .main-3 .item-row-2 .col-md-3 .item1 .item1-bottom a, main .main-3 .item-row-2 .col-md-3 .item2 .item1-bottom a, main .main-3 .item-row-2 .col-md-3 .item3 .item1-bottom a, main .main-3 .item-row-2 .col-md-3 .item4 .item1-bottom a {
+          outline: none;
+          text-decoration: none;
+          border: 2px solid #bf9b5d;
+          border-radius: 5px;
+          color: #bf9b5d;
+          transition: border ease-in-out 0.2s;
+          display: block;
+          padding: 15px; }
+          main .main-3 .item-row-1 .col-md-3 .item1 .item1-bottom a i, main .main-3 .item-row-1 .col-md-3 .item2 .item1-bottom a i, main .main-3 .item-row-1 .col-md-3 .item3 .item1-bottom a i, main .main-3 .item-row-1 .col-md-3 .item4 .item1-bottom a i, main .main-3 .item-row-2 .col-md-3 .item1 .item1-bottom a i, main .main-3 .item-row-2 .col-md-3 .item2 .item1-bottom a i, main .main-3 .item-row-2 .col-md-3 .item3 .item1-bottom a i, main .main-3 .item-row-2 .col-md-3 .item4 .item1-bottom a i {
+            margin-right: 5px;
+            font-size: 13px; }
+  main .main-3 .item-row-2 {
+    margin-top: 0px !important; }
+main .main-4 {
+  padding-top: 4rem;
+  position: relative;
+  padding-bottom: 4rem;
+  background-image: url(../../images/blog-section.webp);
+  background-size: cover;
+  background-position: center;
+  /* height: 100vh; */
+  background-repeat: no-repeat; }
+  main .main-4 .col-md-12 .top {
+    text-align: center; }
+    main .main-4 .col-md-12 .top h5 {
+      font-size: 40px;
+      color: #6a6a6a;
+      font-weight: bolder;
+      position: relative;
+      padding-bottom: 20px; }
+      main .main-4 .col-md-12 .top h5::after {
+        background-image: url(../../images/slider-lines-2.webp);
+        position: absolute;
+        content: "";
+        width: 50%;
+        height: 10px;
+        left: 25%;
+        right: 25%;
+        background-repeat: no-repeat;
+        background-position: 50%;
+        bottom: 0px; }
+  main .main-4 .item-main-4 {
+    padding-bottom: 4rem;
+    margin-top: 4rem; }
+    main .main-4 .item-main-4 .col-md-4 .item1, main .main-4 .item-main-4 .col-md-4 .item2, main .main-4 .item-main-4 .col-md-4 .item3 {
+      margin-bottom: 20px; }
+      main .main-4 .item-main-4 .col-md-4 .item1 .top .img img, main .main-4 .item-main-4 .col-md-4 .item2 .top .img img, main .main-4 .item-main-4 .col-md-4 .item3 .top .img img {
+        width: 100%; }
+      main .main-4 .item-main-4 .col-md-4 .item1 .bottom, main .main-4 .item-main-4 .col-md-4 .item2 .bottom, main .main-4 .item-main-4 .col-md-4 .item3 .bottom {
+        margin-top: 2rem; }
+        main .main-4 .item-main-4 .col-md-4 .item1 .bottom h5, main .main-4 .item-main-4 .col-md-4 .item2 .bottom h5, main .main-4 .item-main-4 .col-md-4 .item3 .bottom h5 {
+          font-size: 20px;
+          color: #fff;
+          display: inline-block;
+          margin-bottom: 10px;
+          transition: all ease-in-out 0.3s; }
+          main .main-4 .item-main-4 .col-md-4 .item1 .bottom h5:hover, main .main-4 .item-main-4 .col-md-4 .item2 .bottom h5:hover, main .main-4 .item-main-4 .col-md-4 .item3 .bottom h5:hover {
+            color: #bf9b5d; }
+        main .main-4 .item-main-4 .col-md-4 .item1 .bottom h6, main .main-4 .item-main-4 .col-md-4 .item2 .bottom h6, main .main-4 .item-main-4 .col-md-4 .item3 .bottom h6 {
+          color: #bf9b5d;
+          margin-bottom: 10px;
+          display: inline-block;
+          transition: all ease-in-out 0.3s; }
+          main .main-4 .item-main-4 .col-md-4 .item1 .bottom h6:hover, main .main-4 .item-main-4 .col-md-4 .item2 .bottom h6:hover, main .main-4 .item-main-4 .col-md-4 .item3 .bottom h6:hover {
+            color: #fff; }
+        main .main-4 .item-main-4 .col-md-4 .item1 .bottom p, main .main-4 .item-main-4 .col-md-4 .item2 .bottom p, main .main-4 .item-main-4 .col-md-4 .item3 .bottom p {
+          color: #6a6a6a;
+          line-height: 1.5em; }
+main .main-5 {
+  margin-top: -8rem;
+  padding-top: 8rem;
+  padding-bottom: 4rem;
+  background-position: 50%;
+  background-image: url(../../images/header-bg.webp); }
+  main .main-5 .col-md-12 .top {
+    text-align: center; }
+    main .main-5 .col-md-12 .top h5 {
+      font-size: 40px;
+      color: #6a6a6a;
+      font-weight: bolder;
+      position: relative;
+      padding-bottom: 20px; }
+      main .main-5 .col-md-12 .top h5::after {
+        background-image: url(../../images/slider-lines-2.webp);
+        position: absolute;
+        content: "";
+        width: 50%;
+        height: 10px;
+        left: 25%;
+        right: 25%;
+        background-repeat: no-repeat;
+        background-position: 50%;
+        bottom: 0px; }
+  main .main-5 .item {
+    margin-top: 4rem; }
+    main .main-5 .item .col-md-3 .item1, main .main-5 .item .col-md-3 .item2, main .main-5 .item .col-md-3 .item3, main .main-5 .item .col-md-3 .item4 {
+      margin-bottom: 20px; }
+      main .main-5 .item .col-md-3 .item1:hover .img .img1, main .main-5 .item .col-md-3 .item2:hover .img .img1, main .main-5 .item .col-md-3 .item3:hover .img .img1, main .main-5 .item .col-md-3 .item4:hover .img .img1 {
+        opacity: 0 !important;
+        width: 0% !important; }
+      main .main-5 .item .col-md-3 .item1:hover .img .img2, main .main-5 .item .col-md-3 .item2:hover .img .img2, main .main-5 .item .col-md-3 .item3:hover .img .img2, main .main-5 .item .col-md-3 .item4:hover .img .img2 {
+        opacity: 1 !important;
+        width: 100% !important; }
+      main .main-5 .item .col-md-3 .item1:hover .position-icon, main .main-5 .item .col-md-3 .item2:hover .position-icon, main .main-5 .item .col-md-3 .item3:hover .position-icon, main .main-5 .item .col-md-3 .item4:hover .position-icon {
+        opacity: 1 !important; }
+      main .main-5 .item .col-md-3 .item1:hover .item1-bottom, main .main-5 .item .col-md-3 .item2:hover .item1-bottom, main .main-5 .item .col-md-3 .item3:hover .item1-bottom, main .main-5 .item .col-md-3 .item4:hover .item1-bottom {
+        opacity: 1 !important;
+        transform: translateY(0px);
+        visibility: visible !important; }
+      main .main-5 .item .col-md-3 .item1 .item1-top, main .main-5 .item .col-md-3 .item2 .item1-top, main .main-5 .item .col-md-3 .item3 .item1-top, main .main-5 .item .col-md-3 .item4 .item1-top {
+        background-color: #282828;
+        position: relative; }
+        main .main-5 .item .col-md-3 .item1 .item1-top .SALE, main .main-5 .item .col-md-3 .item2 .item1-top .SALE, main .main-5 .item .col-md-3 .item3 .item1-top .SALE, main .main-5 .item .col-md-3 .item4 .item1-top .SALE {
+          position: absolute;
+          display: inline-block;
+          padding: 5px;
+          left: 10px;
+          top: 10px;
+          background-color: #36373e; }
+          main .main-5 .item .col-md-3 .item1 .item1-top .SALE span, main .main-5 .item .col-md-3 .item2 .item1-top .SALE span, main .main-5 .item .col-md-3 .item3 .item1-top .SALE span, main .main-5 .item .col-md-3 .item4 .item1-top .SALE span {
+            color: #fff;
+            font-size: 15px;
+            font-weight: 700; }
+        main .main-5 .item .col-md-3 .item1 .item1-top a, main .main-5 .item .col-md-3 .item2 .item1-top a, main .main-5 .item .col-md-3 .item3 .item1-top a, main .main-5 .item .col-md-3 .item4 .item1-top a {
+          outline: none;
+          text-decoration: none; }
+          main .main-5 .item .col-md-3 .item1 .item1-top a .img, main .main-5 .item .col-md-3 .item2 .item1-top a .img, main .main-5 .item .col-md-3 .item3 .item1-top a .img, main .main-5 .item .col-md-3 .item4 .item1-top a .img {
+            padding: 2rem;
+            height: 342px;
+            display: flex;
+            justify-content: center;
+            align-items: center; }
+            main .main-5 .item .col-md-3 .item1 .item1-top a .img .img1, main .main-5 .item .col-md-3 .item1 .item1-top a .img .img2, main .main-5 .item .col-md-3 .item2 .item1-top a .img .img1, main .main-5 .item .col-md-3 .item2 .item1-top a .img .img2, main .main-5 .item .col-md-3 .item3 .item1-top a .img .img1, main .main-5 .item .col-md-3 .item3 .item1-top a .img .img2, main .main-5 .item .col-md-3 .item4 .item1-top a .img .img1, main .main-5 .item .col-md-3 .item4 .item1-top a .img .img2 {
+              transition: opacity linear 1000ms;
+              width: 100%;
+              height: 100%;
+              opacity: 1;
+              overflow: hidden; }
+            main .main-5 .item .col-md-3 .item1 .item1-top a .img .img2, main .main-5 .item .col-md-3 .item2 .item1-top a .img .img2, main .main-5 .item .col-md-3 .item3 .item1-top a .img .img2, main .main-5 .item .col-md-3 .item4 .item1-top a .img .img2 {
+              width: 0%;
+              opacity: 0; }
+        main .main-5 .item .col-md-3 .item1 .item1-top .position-icon, main .main-5 .item .col-md-3 .item2 .item1-top .position-icon, main .main-5 .item .col-md-3 .item3 .item1-top .position-icon, main .main-5 .item .col-md-3 .item4 .item1-top .position-icon {
+          position: absolute;
+          opacity: 0;
+          overflow: hidden;
+          transition: all ease-in-out 0.3s;
+          right: 10px;
+          top: 10px;
+          width: 28px; }
+          main .main-5 .item .col-md-3 .item1 .item1-top .position-icon .balance1, main .main-5 .item .col-md-3 .item1 .item1-top .position-icon .heart1, main .main-5 .item .col-md-3 .item1 .item1-top .position-icon .search1, main .main-5 .item .col-md-3 .item1 .item1-top .position-icon .balance2, main .main-5 .item .col-md-3 .item1 .item1-top .position-icon .heart2, main .main-5 .item .col-md-3 .item1 .item1-top .position-icon .search2, main .main-5 .item .col-md-3 .item1 .item1-top .position-icon .balance3, main .main-5 .item .col-md-3 .item1 .item1-top .position-icon .heart3, main .main-5 .item .col-md-3 .item1 .item1-top .position-icon .search3, main .main-5 .item .col-md-3 .item1 .item1-top .position-icon .balance4, main .main-5 .item .col-md-3 .item1 .item1-top .position-icon .heart4, main .main-5 .item .col-md-3 .item1 .item1-top .position-icon .search4, main .main-5 .item .col-md-3 .item2 .item1-top .position-icon .balance1, main .main-5 .item .col-md-3 .item2 .item1-top .position-icon .heart1, main .main-5 .item .col-md-3 .item2 .item1-top .position-icon .search1, main .main-5 .item .col-md-3 .item2 .item1-top .position-icon .balance2, main .main-5 .item .col-md-3 .item2 .item1-top .position-icon .heart2, main .main-5 .item .col-md-3 .item2 .item1-top .position-icon .search2, main .main-5 .item .col-md-3 .item2 .item1-top .position-icon .balance3, main .main-5 .item .col-md-3 .item2 .item1-top .position-icon .heart3, main .main-5 .item .col-md-3 .item2 .item1-top .position-icon .search3, main .main-5 .item .col-md-3 .item2 .item1-top .position-icon .balance4, main .main-5 .item .col-md-3 .item2 .item1-top .position-icon .heart4, main .main-5 .item .col-md-3 .item2 .item1-top .position-icon .search4, main .main-5 .item .col-md-3 .item3 .item1-top .position-icon .balance1, main .main-5 .item .col-md-3 .item3 .item1-top .position-icon .heart1, main .main-5 .item .col-md-3 .item3 .item1-top .position-icon .search1, main .main-5 .item .col-md-3 .item3 .item1-top .position-icon .balance2, main .main-5 .item .col-md-3 .item3 .item1-top .position-icon .heart2, main .main-5 .item .col-md-3 .item3 .item1-top .position-icon .search2, main .main-5 .item .col-md-3 .item3 .item1-top .position-icon .balance3, main .main-5 .item .col-md-3 .item3 .item1-top .position-icon .heart3, main .main-5 .item .col-md-3 .item3 .item1-top .position-icon .search3, main .main-5 .item .col-md-3 .item3 .item1-top .position-icon .balance4, main .main-5 .item .col-md-3 .item3 .item1-top .position-icon .heart4, main .main-5 .item .col-md-3 .item3 .item1-top .position-icon .search4, main .main-5 .item .col-md-3 .item4 .item1-top .position-icon .balance1, main .main-5 .item .col-md-3 .item4 .item1-top .position-icon .heart1, main .main-5 .item .col-md-3 .item4 .item1-top .position-icon .search1, main .main-5 .item .col-md-3 .item4 .item1-top .position-icon .balance2, main .main-5 .item .col-md-3 .item4 .item1-top .position-icon .heart2, main .main-5 .item .col-md-3 .item4 .item1-top .position-icon .search2, main .main-5 .item .col-md-3 .item4 .item1-top .position-icon .balance3, main .main-5 .item .col-md-3 .item4 .item1-top .position-icon .heart3, main .main-5 .item .col-md-3 .item4 .item1-top .position-icon .search3, main .main-5 .item .col-md-3 .item4 .item1-top .position-icon .balance4, main .main-5 .item .col-md-3 .item4 .item1-top .position-icon .heart4, main .main-5 .item .col-md-3 .item4 .item1-top .position-icon .search4 {
+            padding: 5px;
+            transition: all ease-in-out 0.3s;
+            margin-bottom: 10px; }
+            main .main-5 .item .col-md-3 .item1 .item1-top .position-icon .balance1 i, main .main-5 .item .col-md-3 .item1 .item1-top .position-icon .heart1 i, main .main-5 .item .col-md-3 .item1 .item1-top .position-icon .search1 i, main .main-5 .item .col-md-3 .item1 .item1-top .position-icon .balance2 i, main .main-5 .item .col-md-3 .item1 .item1-top .position-icon .heart2 i, main .main-5 .item .col-md-3 .item1 .item1-top .position-icon .search2 i, main .main-5 .item .col-md-3 .item1 .item1-top .position-icon .balance3 i, main .main-5 .item .col-md-3 .item1 .item1-top .position-icon .heart3 i, main .main-5 .item .col-md-3 .item1 .item1-top .position-icon .search3 i, main .main-5 .item .col-md-3 .item1 .item1-top .position-icon .balance4 i, main .main-5 .item .col-md-3 .item1 .item1-top .position-icon .heart4 i, main .main-5 .item .col-md-3 .item1 .item1-top .position-icon .search4 i, main .main-5 .item .col-md-3 .item2 .item1-top .position-icon .balance1 i, main .main-5 .item .col-md-3 .item2 .item1-top .position-icon .heart1 i, main .main-5 .item .col-md-3 .item2 .item1-top .position-icon .search1 i, main .main-5 .item .col-md-3 .item2 .item1-top .position-icon .balance2 i, main .main-5 .item .col-md-3 .item2 .item1-top .position-icon .heart2 i, main .main-5 .item .col-md-3 .item2 .item1-top .position-icon .search2 i, main .main-5 .item .col-md-3 .item2 .item1-top .position-icon .balance3 i, main .main-5 .item .col-md-3 .item2 .item1-top .position-icon .heart3 i, main .main-5 .item .col-md-3 .item2 .item1-top .position-icon .search3 i, main .main-5 .item .col-md-3 .item2 .item1-top .position-icon .balance4 i, main .main-5 .item .col-md-3 .item2 .item1-top .position-icon .heart4 i, main .main-5 .item .col-md-3 .item2 .item1-top .position-icon .search4 i, main .main-5 .item .col-md-3 .item3 .item1-top .position-icon .balance1 i, main .main-5 .item .col-md-3 .item3 .item1-top .position-icon .heart1 i, main .main-5 .item .col-md-3 .item3 .item1-top .position-icon .search1 i, main .main-5 .item .col-md-3 .item3 .item1-top .position-icon .balance2 i, main .main-5 .item .col-md-3 .item3 .item1-top .position-icon .heart2 i, main .main-5 .item .col-md-3 .item3 .item1-top .position-icon .search2 i, main .main-5 .item .col-md-3 .item3 .item1-top .position-icon .balance3 i, main .main-5 .item .col-md-3 .item3 .item1-top .position-icon .heart3 i, main .main-5 .item .col-md-3 .item3 .item1-top .position-icon .search3 i, main .main-5 .item .col-md-3 .item3 .item1-top .position-icon .balance4 i, main .main-5 .item .col-md-3 .item3 .item1-top .position-icon .heart4 i, main .main-5 .item .col-md-3 .item3 .item1-top .position-icon .search4 i, main .main-5 .item .col-md-3 .item4 .item1-top .position-icon .balance1 i, main .main-5 .item .col-md-3 .item4 .item1-top .position-icon .heart1 i, main .main-5 .item .col-md-3 .item4 .item1-top .position-icon .search1 i, main .main-5 .item .col-md-3 .item4 .item1-top .position-icon .balance2 i, main .main-5 .item .col-md-3 .item4 .item1-top .position-icon .heart2 i, main .main-5 .item .col-md-3 .item4 .item1-top .position-icon .search2 i, main .main-5 .item .col-md-3 .item4 .item1-top .position-icon .balance3 i, main .main-5 .item .col-md-3 .item4 .item1-top .position-icon .heart3 i, main .main-5 .item .col-md-3 .item4 .item1-top .position-icon .search3 i, main .main-5 .item .col-md-3 .item4 .item1-top .position-icon .balance4 i, main .main-5 .item .col-md-3 .item4 .item1-top .position-icon .heart4 i, main .main-5 .item .col-md-3 .item4 .item1-top .position-icon .search4 i {
+              color: #bf9b5d;
+              cursor: pointer;
+              font-size: 18px; }
+          main .main-5 .item .col-md-3 .item1 .item1-top .position-icon .balance5, main .main-5 .item .col-md-3 .item1 .item1-top .position-icon .heart5, main .main-5 .item .col-md-3 .item1 .item1-top .position-icon .search5, main .main-5 .item .col-md-3 .item1 .item1-top .position-icon .balance6, main .main-5 .item .col-md-3 .item1 .item1-top .position-icon .heart6, main .main-5 .item .col-md-3 .item1 .item1-top .position-icon .search6, main .main-5 .item .col-md-3 .item1 .item1-top .position-icon .balance7, main .main-5 .item .col-md-3 .item1 .item1-top .position-icon .heart7, main .main-5 .item .col-md-3 .item1 .item1-top .position-icon .search7, main .main-5 .item .col-md-3 .item1 .item1-top .position-icon .balance8, main .main-5 .item .col-md-3 .item1 .item1-top .position-icon .heart8, main .main-5 .item .col-md-3 .item1 .item1-top .position-icon .search8, main .main-5 .item .col-md-3 .item2 .item1-top .position-icon .balance5, main .main-5 .item .col-md-3 .item2 .item1-top .position-icon .heart5, main .main-5 .item .col-md-3 .item2 .item1-top .position-icon .search5, main .main-5 .item .col-md-3 .item2 .item1-top .position-icon .balance6, main .main-5 .item .col-md-3 .item2 .item1-top .position-icon .heart6, main .main-5 .item .col-md-3 .item2 .item1-top .position-icon .search6, main .main-5 .item .col-md-3 .item2 .item1-top .position-icon .balance7, main .main-5 .item .col-md-3 .item2 .item1-top .position-icon .heart7, main .main-5 .item .col-md-3 .item2 .item1-top .position-icon .search7, main .main-5 .item .col-md-3 .item2 .item1-top .position-icon .balance8, main .main-5 .item .col-md-3 .item2 .item1-top .position-icon .heart8, main .main-5 .item .col-md-3 .item2 .item1-top .position-icon .search8, main .main-5 .item .col-md-3 .item3 .item1-top .position-icon .balance5, main .main-5 .item .col-md-3 .item3 .item1-top .position-icon .heart5, main .main-5 .item .col-md-3 .item3 .item1-top .position-icon .search5, main .main-5 .item .col-md-3 .item3 .item1-top .position-icon .balance6, main .main-5 .item .col-md-3 .item3 .item1-top .position-icon .heart6, main .main-5 .item .col-md-3 .item3 .item1-top .position-icon .search6, main .main-5 .item .col-md-3 .item3 .item1-top .position-icon .balance7, main .main-5 .item .col-md-3 .item3 .item1-top .position-icon .heart7, main .main-5 .item .col-md-3 .item3 .item1-top .position-icon .search7, main .main-5 .item .col-md-3 .item3 .item1-top .position-icon .balance8, main .main-5 .item .col-md-3 .item3 .item1-top .position-icon .heart8, main .main-5 .item .col-md-3 .item3 .item1-top .position-icon .search8, main .main-5 .item .col-md-3 .item4 .item1-top .position-icon .balance5, main .main-5 .item .col-md-3 .item4 .item1-top .position-icon .heart5, main .main-5 .item .col-md-3 .item4 .item1-top .position-icon .search5, main .main-5 .item .col-md-3 .item4 .item1-top .position-icon .balance6, main .main-5 .item .col-md-3 .item4 .item1-top .position-icon .heart6, main .main-5 .item .col-md-3 .item4 .item1-top .position-icon .search6, main .main-5 .item .col-md-3 .item4 .item1-top .position-icon .balance7, main .main-5 .item .col-md-3 .item4 .item1-top .position-icon .heart7, main .main-5 .item .col-md-3 .item4 .item1-top .position-icon .search7, main .main-5 .item .col-md-3 .item4 .item1-top .position-icon .balance8, main .main-5 .item .col-md-3 .item4 .item1-top .position-icon .heart8, main .main-5 .item .col-md-3 .item4 .item1-top .position-icon .search8 {
+            padding: 5px;
+            transition: all ease-in-out 0.3s;
+            margin-bottom: 10px; }
+            main .main-5 .item .col-md-3 .item1 .item1-top .position-icon .balance5 i, main .main-5 .item .col-md-3 .item1 .item1-top .position-icon .heart5 i, main .main-5 .item .col-md-3 .item1 .item1-top .position-icon .search5 i, main .main-5 .item .col-md-3 .item1 .item1-top .position-icon .balance6 i, main .main-5 .item .col-md-3 .item1 .item1-top .position-icon .heart6 i, main .main-5 .item .col-md-3 .item1 .item1-top .position-icon .search6 i, main .main-5 .item .col-md-3 .item1 .item1-top .position-icon .balance7 i, main .main-5 .item .col-md-3 .item1 .item1-top .position-icon .heart7 i, main .main-5 .item .col-md-3 .item1 .item1-top .position-icon .search7 i, main .main-5 .item .col-md-3 .item1 .item1-top .position-icon .balance8 i, main .main-5 .item .col-md-3 .item1 .item1-top .position-icon .heart8 i, main .main-5 .item .col-md-3 .item1 .item1-top .position-icon .search8 i, main .main-5 .item .col-md-3 .item2 .item1-top .position-icon .balance5 i, main .main-5 .item .col-md-3 .item2 .item1-top .position-icon .heart5 i, main .main-5 .item .col-md-3 .item2 .item1-top .position-icon .search5 i, main .main-5 .item .col-md-3 .item2 .item1-top .position-icon .balance6 i, main .main-5 .item .col-md-3 .item2 .item1-top .position-icon .heart6 i, main .main-5 .item .col-md-3 .item2 .item1-top .position-icon .search6 i, main .main-5 .item .col-md-3 .item2 .item1-top .position-icon .balance7 i, main .main-5 .item .col-md-3 .item2 .item1-top .position-icon .heart7 i, main .main-5 .item .col-md-3 .item2 .item1-top .position-icon .search7 i, main .main-5 .item .col-md-3 .item2 .item1-top .position-icon .balance8 i, main .main-5 .item .col-md-3 .item2 .item1-top .position-icon .heart8 i, main .main-5 .item .col-md-3 .item2 .item1-top .position-icon .search8 i, main .main-5 .item .col-md-3 .item3 .item1-top .position-icon .balance5 i, main .main-5 .item .col-md-3 .item3 .item1-top .position-icon .heart5 i, main .main-5 .item .col-md-3 .item3 .item1-top .position-icon .search5 i, main .main-5 .item .col-md-3 .item3 .item1-top .position-icon .balance6 i, main .main-5 .item .col-md-3 .item3 .item1-top .position-icon .heart6 i, main .main-5 .item .col-md-3 .item3 .item1-top .position-icon .search6 i, main .main-5 .item .col-md-3 .item3 .item1-top .position-icon .balance7 i, main .main-5 .item .col-md-3 .item3 .item1-top .position-icon .heart7 i, main .main-5 .item .col-md-3 .item3 .item1-top .position-icon .search7 i, main .main-5 .item .col-md-3 .item3 .item1-top .position-icon .balance8 i, main .main-5 .item .col-md-3 .item3 .item1-top .position-icon .heart8 i, main .main-5 .item .col-md-3 .item3 .item1-top .position-icon .search8 i, main .main-5 .item .col-md-3 .item4 .item1-top .position-icon .balance5 i, main .main-5 .item .col-md-3 .item4 .item1-top .position-icon .heart5 i, main .main-5 .item .col-md-3 .item4 .item1-top .position-icon .search5 i, main .main-5 .item .col-md-3 .item4 .item1-top .position-icon .balance6 i, main .main-5 .item .col-md-3 .item4 .item1-top .position-icon .heart6 i, main .main-5 .item .col-md-3 .item4 .item1-top .position-icon .search6 i, main .main-5 .item .col-md-3 .item4 .item1-top .position-icon .balance7 i, main .main-5 .item .col-md-3 .item4 .item1-top .position-icon .heart7 i, main .main-5 .item .col-md-3 .item4 .item1-top .position-icon .search7 i, main .main-5 .item .col-md-3 .item4 .item1-top .position-icon .balance8 i, main .main-5 .item .col-md-3 .item4 .item1-top .position-icon .heart8 i, main .main-5 .item .col-md-3 .item4 .item1-top .position-icon .search8 i {
+              color: #bf9b5d;
+              cursor: pointer;
+              font-size: 18px; }
+      main .main-5 .item .col-md-3 .item1 .item1-center, main .main-5 .item .col-md-3 .item2 .item1-center, main .main-5 .item .col-md-3 .item3 .item1-center, main .main-5 .item .col-md-3 .item4 .item1-center {
+        margin-top: 1rem; }
+        main .main-5 .item .col-md-3 .item1 .item1-center .name, main .main-5 .item .col-md-3 .item2 .item1-center .name, main .main-5 .item .col-md-3 .item3 .item1-center .name, main .main-5 .item .col-md-3 .item4 .item1-center .name {
+          margin-bottom: 10px; }
+          main .main-5 .item .col-md-3 .item1 .item1-center .name a, main .main-5 .item .col-md-3 .item2 .item1-center .name a, main .main-5 .item .col-md-3 .item3 .item1-center .name a, main .main-5 .item .col-md-3 .item4 .item1-center .name a {
+            outline: none;
+            text-decoration: none;
+            color: #6a6a6a; }
+        main .main-5 .item .col-md-3 .item1 .item1-center .price-star, main .main-5 .item .col-md-3 .item2 .item1-center .price-star, main .main-5 .item .col-md-3 .item3 .item1-center .price-star, main .main-5 .item .col-md-3 .item4 .item1-center .price-star {
+          margin-bottom: 5px;
+          display: flex; }
+          main .main-5 .item .col-md-3 .item1 .item1-center .price-star p, main .main-5 .item .col-md-3 .item2 .item1-center .price-star p, main .main-5 .item .col-md-3 .item3 .item1-center .price-star p, main .main-5 .item .col-md-3 .item4 .item1-center .price-star p {
+            width: 50%;
+            color: #6a6a6a; }
+          main .main-5 .item .col-md-3 .item1 .item1-center .price-star .star, main .main-5 .item .col-md-3 .item2 .item1-center .price-star .star, main .main-5 .item .col-md-3 .item3 .item1-center .price-star .star, main .main-5 .item .col-md-3 .item4 .item1-center .price-star .star {
+            width: 50%;
+            text-align: right; }
+            main .main-5 .item .col-md-3 .item1 .item1-center .price-star .star i, main .main-5 .item .col-md-3 .item2 .item1-center .price-star .star i, main .main-5 .item .col-md-3 .item3 .item1-center .price-star .star i, main .main-5 .item .col-md-3 .item4 .item1-center .price-star .star i {
+              color: #bf9b5d;
+              font-size: 10px; }
+      main .main-5 .item .col-md-3 .item1 .item1-bottom, main .main-5 .item .col-md-3 .item2 .item1-bottom, main .main-5 .item .col-md-3 .item3 .item1-bottom, main .main-5 .item .col-md-3 .item4 .item1-bottom {
+        margin-top: 1rem;
+        text-align: center;
+        background-color: #282828;
+        visibility: hidden;
+        transform: translateY(20px);
+        opacity: 0;
+        transition: all ease-in-out 0.3s;
+        display: block; }
+        main .main-5 .item .col-md-3 .item1 .item1-bottom:hover a, main .main-5 .item .col-md-3 .item2 .item1-bottom:hover a, main .main-5 .item .col-md-3 .item3 .item1-bottom:hover a, main .main-5 .item .col-md-3 .item4 .item1-bottom:hover a {
+          border: 2px solid #252525 !important; }
+        main .main-5 .item .col-md-3 .item1 .item1-bottom a, main .main-5 .item .col-md-3 .item2 .item1-bottom a, main .main-5 .item .col-md-3 .item3 .item1-bottom a, main .main-5 .item .col-md-3 .item4 .item1-bottom a {
+          outline: none;
+          text-decoration: none;
+          border: 2px solid #bf9b5d;
+          border-radius: 5px;
+          color: #bf9b5d;
+          transition: border ease-in-out 0.2s;
+          display: block;
+          padding: 15px; }
+          main .main-5 .item .col-md-3 .item1 .item1-bottom a i, main .main-5 .item .col-md-3 .item2 .item1-bottom a i, main .main-5 .item .col-md-3 .item3 .item1-bottom a i, main .main-5 .item .col-md-3 .item4 .item1-bottom a i {
+            margin-right: 5px;
+            font-size: 13px; }
+main .main-6 {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  background-image: url(../../images/blurbs-bg2.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50%; }
+  main .main-6 .col-md-12 .top {
+    text-align: center; }
+    main .main-6 .col-md-12 .top h5 {
+      font-size: 40px;
+      color: #6a6a6a;
+      font-weight: bolder;
+      position: relative;
+      padding-bottom: 20px; }
+      main .main-6 .col-md-12 .top h5::after {
+        background-image: url(../../images/slider-lines-2.webp);
+        position: absolute;
+        content: "";
+        width: 50%;
+        height: 10px;
+        left: 25%;
+        right: 25%;
+        background-repeat: no-repeat;
+        background-position: 50%;
+        bottom: 0px; }
+  main .main-6 .item {
+    margin-top: 2rem;
+    padding-bottom: 2rem; }
+    main .main-6 .item .col-md-4 .item1 .top, main .main-6 .item .col-md-4 .item2 .top, main .main-6 .item .col-md-4 .item3 .top {
+      text-align: center; }
+      main .main-6 .item .col-md-4 .item1 .top i, main .main-6 .item .col-md-4 .item2 .top i, main .main-6 .item .col-md-4 .item3 .top i {
+        font-size: 25px;
+        color: #adadad; }
+    main .main-6 .item .col-md-4 .item1 .bottom, main .main-6 .item .col-md-4 .item2 .bottom, main .main-6 .item .col-md-4 .item3 .bottom {
+      margin-top: 10px; }
+      main .main-6 .item .col-md-4 .item1 .bottom h5, main .main-6 .item .col-md-4 .item2 .bottom h5, main .main-6 .item .col-md-4 .item3 .bottom h5 {
+        margin-bottom: 10px;
+        font-weight: bolder;
+        text-align: center;
+        color: #bf9b5d; }
+      main .main-6 .item .col-md-4 .item1 .bottom p, main .main-6 .item .col-md-4 .item2 .bottom p, main .main-6 .item .col-md-4 .item3 .bottom p {
+        color: #6a6a6a;
+        text-align: justify;
+        line-height: 1.5em; }
+main .main-7 {
+  background-image: url(../../images/header-bg.webp);
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  background-repeat: no-repeat;
+  background-position: 50%;
+  background-size: cover; }
+  main .main-7 .col-md-12 .top {
+    text-align: center; }
+    main .main-7 .col-md-12 .top h5 {
+      font-size: 40px;
+      color: #6a6a6a;
+      font-weight: bolder;
+      position: relative;
+      padding-bottom: 20px; }
+      main .main-7 .col-md-12 .top h5::after {
+        background-image: url(../../images/slider-lines-2.webp);
+        position: absolute;
+        content: "";
+        width: 50%;
+        height: 10px;
+        left: 25%;
+        right: 25%;
+        background-repeat: no-repeat;
+        background-position: 50%;
+        bottom: 0px; }
+  main .main-7 .full-item {
+    overflow: hidden;
+    padding-bottom: 3rem; }
+    main .main-7 .full-item .item {
+      margin-top: 3rem;
+      display: flex;
+      overflow: hidden;
+      width: 100%; }
+      main .main-7 .full-item .item .item1 {
+        margin-right: 20px; }
+        main .main-7 .full-item .item .item1 .top {
+          background-image: url(../../images/testimonials.webp);
+          /* background-size: cover; */
+          background-position: 50%;
+          background-repeat: no-repeat;
+          /* padding: 0px 50px; */
+          text-align: justify;
+          height: 40vh;
+          width: 100%;
+          display: flex;
+          justify-content: center;
+          align-items: center; }
+          main .main-7 .full-item .item .item1 .top p {
+            color: #6a6a6a;
+            padding: 0px 50px; }
+        main .main-7 .full-item .item .item1 .bottom {
+          display: flex;
+          align-items: center; }
+          main .main-7 .full-item .item .item1 .bottom .img-people {
+            margin-right: 10px;
+            margin-left: 30px; }
+            main .main-7 .full-item .item .item1 .bottom .img-people img {
+              border-radius: 50%;
+              width: 80px; }
+          main .main-7 .full-item .item .item1 .bottom .name-people {
+            width: 65%; }
+            main .main-7 .full-item .item .item1 .bottom .name-people .name p {
+              color: #fff;
+              line-height: 1.5em;
+              font-size: 20px; }
+            main .main-7 .full-item .item .item1 .bottom .name-people .work p {
+              color: #bf9b5d;
+              line-height: 1.5em; }
+
+footer .footer {
+  background-image: url(../../images/Layer-8-copy-3.webp);
+  margin-top: -3rem;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding-top: 8rem;
+  padding-bottom: 8rem; }
+  footer .footer .col-md-12 .top {
+    margin-bottom: 2rem;
+    text-align: center; }
+  footer .footer .col-md-12 .bottom .list-item ul {
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+    footer .footer .col-md-12 .bottom .list-item ul li {
+      float: left;
+      margin-right: 30px; }
+      footer .footer .col-md-12 .bottom .list-item ul li:last-child {
+        margin-right: 0px !important; }
+      footer .footer .col-md-12 .bottom .list-item ul li a {
+        outline: none;
+        font-size: 18px;
+        text-decoration: none;
+        color: #6a6a6a;
+        transition: all ease-in-out 0.2s; }
+        footer .footer .col-md-12 .bottom .list-item ul li a:hover {
+          color: #bf9b5d; }
+      footer .footer .col-md-12 .bottom .list-item ul li .active {
+        color: #bf9b5d; }
+
+.toggleNavJS-full {
+  opacity: 1 !important;
+  transform: translateX(0px); }
+
+.toggleNavJS-laster {
+  transform: translateX(0px) !important;
+  opacity: 1 !important; }
+
+.toggleNavJS-first {
+  transform: translateX(-385px) !important; }
+
+.togglebodyOverflow {
+  overflow: hidden; }
+
+.toggleFromSearchJS {
+  opacity: 0.8 !important;
+  width: 100% !important; }
+
+.toggleBackground {
+  display: block !important; }
+
+.toggleIconPosition i::before {
+  content: '\f00c' !important; }
+
+@media screen and (max-width: 480px) {
+  footer .footer {
+    padding-bottom: 0rem !important; }
+    footer .footer .col-md-12 .bottom .list-item {
+      padding-bottom: 1rem !important; }
+      footer .footer .col-md-12 .bottom .list-item ul {
+        flex-direction: column !important; }
+        footer .footer .col-md-12 .bottom .list-item ul li {
+          margin-right: 0px !important;
+          margin-bottom: 20px !important; }
+          footer .footer .col-md-12 .bottom .list-item ul li:last-child {
+            margin-bottom: 0px !important; }
+
+  main .main-6 .item .col-md-4 .item1, main .main-6 .item .col-md-4 .item2 {
+    margin-bottom: 20px !important; }
+  main .main-4 .col-md-4 .item1, main .main-4 .col-md-4 .item2 {
+    margin-bottom: 30px !important; }
+  main .main-2 .item-main-2 {
+    flex-direction: column !important; }
+    main .main-2 .item-main-2 .item2-main-2 {
+      margin-top: -3px; }
+  main .main-7 .full-item .item .top {
+    width: 100% !important; }
+  main .main-7 .full-item .item .bottom .img-people {
+    margin-left: 0px !important; }
+
+  .slide .contact-item .top h1 {
+    font-size: 30px !important; }
+  .slide .contact-item .bottom p {
+    font-size: 20px !important; }
+  .slide .prev, .slide .next {
+    display: none; }
+
+  nav {
+    display: none !important; }
+
+  .mobile {
+    display: block !important; }
+
+  header .header .col-md-6 .OpenTime {
+    text-align: center !important; }
+  header .header .col-md-6 .User {
+    margin-top: 20px !important;
+    justify-content: center !important; }
+
+  .navJS-full {
+    width: 100% !important; } }
+@media (min-width: 481px) and (max-width: 767px) {
+  nav {
+    display: none !important; }
+
+  .mobile {
+    display: block !important; }
+
+  header .header .col-md-6 .OpenTime {
+    text-align: center !important; }
+  header .header .col-md-6 .User {
+    margin-top: 20px !important;
+    justify-content: center !important; }
+
+  .slide .contact-item .top h1 {
+    font-size: 40px !important; }
+  .slide .contact-item .bottom p {
+    font-size: 25px !important; }
+  .slide .prev, .slide .next {
+    display: none; }
+
+  main .main-2 .item-main-2 {
+    flex-direction: column !important; }
+    main .main-2 .item-main-2 .item2-main-2 {
+      margin-top: -3px; }
+  main .main-5 {
+    margin-top: -10rem !important; }
+  main .main-6 .item .col-md-4 .item1, main .main-6 .item .col-md-4 .item2 {
+    margin-bottom: 20px !important; }
+  main .main-7 .full-item .item .top {
+    width: 50vh !important; }
+  main .main-7 .full-item .item .bottom .img-people {
+    margin-left: 30px !important; } }
+@media (min-width: 768px) and (max-width: 1024px) {
+  header .header .col-md-6 .OpenTime {
+    text-align: center !important; }
+  header .header .col-md-6 .User {
+    justify-content: center !important; }
+
+  nav .nav {
+    height: 20vh !important; }
+
+  main .main-7 .full-item .item .item1 .top {
+    width: 100%;
+    height: 30vh !important;
+    background-position: 25%; }
+  main .main-7 .full-item .item .item1 .bottom .img-people {
+    margin-left: 0px !important; }
+  main .main-3 .item-row-1 .col-md-3 {
+    width: 50%; }
+  main .main-5 .item .col-md-3 {
+    width: 50%; }
+
+  .slide img {
+    height: 50vh !important; } }
+
+/*# sourceMappingURL=style.css.map */
